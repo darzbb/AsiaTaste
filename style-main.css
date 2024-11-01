@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background: url('image/header/bg-main.jpg');
+    background-size: cover;
+    height: 690px;
+    width: 100%;
+}
+
+.overlay {
+	height: 690px;
+	background: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(5px);
+}
+
+header h1 {
+    text-shadow: 0 0 15px black;
+	user-select: none;
+    font-size: 100px;
+    color: white;
+    text-align: center;
+    padding-top: 300px;
+    
+}
+
+.navigation {
+    background-color: rgb(36, 36, 36);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    padding-left: 75px;
+}
+#main-btn, #recipe-btn {
+    color: white;
+    user-select: none;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-right: 100px;
+    padding-left: 25px;
+    transition: all 0.3s;
+}
+
+#main-btn:hover, #recipe-btn:hover {
+    transform: scale(1.25);
+    cursor: pointer;
+    text-shadow: 0 0 10px ghostwhite;
+}
+
+.about {
+    user-select: none;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 50px;
+}
+
+.about p {
+    font-size: 19.75px;
+    margin-top: 35px;
+    width: 700px;
+    margin-left: 375px;
+}
+
+footer {
+    margin-top: 50px;
+    background: url('image/footer/bg-main.jpg');
+    background-size: cover;
+    height: 250px;
+    box-shadow: 0 -10px 15px rgba(0, 0, 0, 0.1);
+}
+
+footer img {
+    width: 120px;
+    height: 120px;
+    border-radius: 27.5px;
+    margin-right: 25px;
+    box-shadow: 0 0 12.5px black;
+    transition: all 0.3s;
+}
+
+footer img:hover {
+    transform: scale(1.25);
+    cursor: pointer;
+}
+
+.img-container {
+    margin-left: 575px;
+    padding-top: 50px;
+}
+
+footer p {
+    color: white;
+    user-select: none;
+    font-size: 17.5px;
+    text-shadow: 0 0 5px black;
+    margin-left: 515px;
+    margin-top: 40px;
+}
+
+footer .overlay {
+    height: 250px;
+    width: 100%;
+	background: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(5px);
+}
+
+span {
+    font-weight: 500;
+}
+
+#Japan {
+    background: linear-gradient(to right, #C4C4C4, #bd0029, #C4C4C4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+#China {
+    background: linear-gradient(45deg, #e7c903, #df280f);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+#SouthKorea {
+    background: linear-gradient(45deg, #C4C4C4, #000000, #cd1127, #003f87, #000000, #C4C4C4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+#Vietnam {
+    background: linear-gradient(to right, #db2017, #dbdb02, #db2017);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+#Thailand {
+    background: linear-gradient(45deg, #ee1b24, #C4C4C4, #241d52, #C4C4C4, #ee1b24);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
