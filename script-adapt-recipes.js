@@ -54,13 +54,13 @@ window.addEventListener("resize", function () {
     if (window.innerWidth < 768) {
         // Зміна стилю для маленьких екранів
         document.querySelectorAll(".recipe").forEach(function (element) {
-            element.style.width = "30%";
+            element.style.width = "32.75%";
         });
         document.querySelectorAll(".caption").forEach(function (element) {
             element.style.fontSize = "12.5px";
         });
         document.querySelectorAll(".title").forEach(function (element) {
-            element.style.fontSize = "18.5px";
+            element.style.fontSize = "22.5px";
         });
         document.querySelectorAll(".see-more-btn").forEach(function (element) {
             element.style.fontSize = "15px";
