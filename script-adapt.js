@@ -15,7 +15,7 @@ window.addEventListener("resize", function () {
         // Код для маленьких екранів
         document.querySelector(".about h2").style.fontSize = "37.5px";
         document.querySelector(".about p").style.fontSize = "15.75px";
-        document.querySelector(".about p").style.width = "375px";
+        document.querySelector(".about p").style.width = "325px";
     } else {
         // Код для великих екранів
         document.querySelector(".about h2").style.fontSize = "50px";

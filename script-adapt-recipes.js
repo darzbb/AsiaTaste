@@ -15,7 +15,7 @@ window.addEventListener("resize", function () {
         // Код для маленьких екранів
         document.querySelector(".about h2").style.fontSize = "37.5px";
         document.querySelector(".about p").style.fontSize = "15.75px";
-        document.querySelector(".about p").style.width = "375px";
+        document.querySelector(".about p").style.width = "325px";
     } else {
         // Код для великих екранів
         document.querySelector(".about h2").style.fontSize = "50px";
@@ -54,13 +54,16 @@ window.addEventListener("resize", function () {
     if (window.innerWidth < 768) {
         // Зміна стилю для маленьких екранів
         document.querySelectorAll(".recipe").forEach(function (element) {
-            element.style.width = "35%";
+            element.style.width = "30%";
         });
         document.querySelectorAll(".caption").forEach(function (element) {
-            element.style.fontSize = "13px";
+            element.style.fontSize = "12.5px";
         });
         document.querySelectorAll(".title").forEach(function (element) {
-            element.style.fontSize = "19px";
+            element.style.fontSize = "18.5px";
+        });
+        document.querySelectorAll(".see-more-btn").forEach(function (element) {
+            element.style.fontSize = "15px";
         });
     } else {
         // Зміна стилю для великих екранів
@@ -72,6 +75,9 @@ window.addEventListener("resize", function () {
         });
         document.querySelectorAll(".title").forEach(function (element) {
             element.style.fontSize = "25px";
+        });
+        document.querySelectorAll(".see-more-btn").forEach(function (element) {
+            element.style.fontSize = "20px";
         });
     }
 });
