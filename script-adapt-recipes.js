@@ -56,6 +56,9 @@ window.addEventListener("resize", function () {
         document.querySelectorAll(".recipe").forEach(function (element) {
             element.style.width = "32.75%";
         });
+        document.querySelectorAll(".recipe").forEach(function (element) {
+            element.style.marginLeft = "9px";
+        });
         document.querySelectorAll(".caption").forEach(function (element) {
             element.style.fontSize = "12.5px";
         });
@@ -69,6 +72,9 @@ window.addEventListener("resize", function () {
         // Зміна стилю для великих екранів
         document.querySelectorAll(".recipe").forEach(function (element) {
             element.style.width = "20%";
+        });
+        document.querySelectorAll(".recipe").forEach(function (element) {
+            element.style.marginLeft = "12px";
         });
         document.querySelectorAll(".caption").forEach(function (element) {
             element.style.fontSize = "16px";
