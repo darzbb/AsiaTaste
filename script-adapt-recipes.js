@@ -54,19 +54,22 @@ window.addEventListener("resize", function () {
     if (window.innerWidth < 768) {
         // Зміна стилю для маленьких екранів
         document.querySelectorAll(".recipe").forEach(function (element) {
-            element.style.width = "32.75%";
+            element.style.width = "30.75%";
         });
         document.querySelectorAll(".recipe").forEach(function (element) {
             element.style.marginLeft = "9px";
         });
         document.querySelectorAll(".caption").forEach(function (element) {
-            element.style.fontSize = "12.5px";
+            element.style.fontSize = "11.5px";
         });
         document.querySelectorAll(".title").forEach(function (element) {
             element.style.fontSize = "22.5px";
         });
         document.querySelectorAll(".see-more-btn").forEach(function (element) {
-            element.style.fontSize = "15px";
+            element.style.fontSize = "13.75px";
+        });
+        document.querySelectorAll(".recipe img").forEach(function (element) {
+            element.style.height = "97.25px";
         });
     } else {
         // Зміна стилю для великих екранів
@@ -84,6 +87,9 @@ window.addEventListener("resize", function () {
         });
         document.querySelectorAll(".see-more-btn").forEach(function (element) {
             element.style.fontSize = "20px";
+        });
+        document.querySelectorAll(".recipe img").forEach(function (element) {
+            element.style.height = "197.25px";
         });
     }
 });

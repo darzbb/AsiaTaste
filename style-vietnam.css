@@ -225,6 +225,7 @@ footer p {
 .recipe img {
     width: 100%;
     max-width: 295px;
+    height: 197.25px;
     display: block;
     border-radius: 25px;
     object-fit: cover;
