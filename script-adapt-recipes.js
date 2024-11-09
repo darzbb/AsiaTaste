@@ -57,7 +57,7 @@ window.addEventListener("resize", function () {
             element.style.width = "31.25%";
         });
         document.querySelectorAll(".recipe").forEach(function (element) {
-            element.style.marginLeft = "9px";
+            element.style.marginLeft = "10px";
         });
         document.querySelectorAll(".caption").forEach(function (element) {
             element.style.fontSize = "11.5px";
