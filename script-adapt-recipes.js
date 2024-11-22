@@ -1,3 +1,4 @@
+// адаптивність для шапки сайту
 window.addEventListener("resize", function () {
     if (window.innerWidth < 768) {
         // Код для маленьких екранів
@@ -10,6 +11,7 @@ window.addEventListener("resize", function () {
     }
 });
 
+// адаптивність для опису
 window.addEventListener("resize", function () {
     if (window.innerWidth < 768) {
         // Код для маленьких екранів
@@ -24,6 +26,7 @@ window.addEventListener("resize", function () {
     }
 });
 
+// адаптивність для підвалу
 window.addEventListener("resize", function () {
     if (window.innerWidth < 768) {
         // Код для маленьких екранів
@@ -50,6 +53,7 @@ window.addEventListener("resize", function () {
     }
 });
 
+// адаптивність для карток рецептів
 window.addEventListener("resize", function () {
     if (window.innerWidth < 768) {
         // Зміна стилю для маленьких екранів

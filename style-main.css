@@ -70,18 +70,32 @@ header {
 .overlay {
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.15);
+    background: rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(5px);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-header h1 {
+.h1 {
     text-shadow: 0 0 15px black;
     user-select: none;
     font-size: 100px;
     color: white;
+    --color1: rgb(227, 227, 227);
+    --color2: rgb(199, 199, 199);
+    --color3: rgb(188, 188, 188);
+    --color4: rgb(157, 157, 157);
+    --color5: rgb(125, 125, 125);
+}
+
+.neon {
+    text-shadow: 
+    0 0 10px var(--color1),
+    0 0 20px var(--color2),
+    0 0 40px var(--color3),
+    0 0 80px var(--color4),
+    0 0 100px var(--color4);
 }
 
 .navigation {
