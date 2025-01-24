@@ -87,10 +87,13 @@ window.addEventListener("resize", function () {
             element.style.marginLeft = "10px";
         });
         document.querySelectorAll(".caption").forEach(function (element) {
-            element.style.fontSize = "11.5px";
+            element.style.fontSize = "10px";
         });
         document.querySelectorAll(".title").forEach(function (element) {
-            element.style.fontSize = "22.5px";
+            element.style.fontSize = "15px";
+        });
+        document.querySelectorAll(".title").forEach(function (element) {
+            element.style.width = "50%";
         });
         document.querySelectorAll(".see-more-btn").forEach(function (element) {
             element.style.fontSize = "12.25px";
