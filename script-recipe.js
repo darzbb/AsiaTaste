@@ -23,3 +23,13 @@ window.addEventListener('load', function() {
       localStorage.removeItem('scrollToCountrySelect');
   }
 });
+
+window.addEventListener('load', function() {
+  const aboutSection = document.getElementById('countryselect');
+  if (aboutSection) {
+      aboutSection.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+      });
+  }
+});

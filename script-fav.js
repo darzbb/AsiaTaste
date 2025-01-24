@@ -85,3 +85,13 @@ document.getElementById('hide-button').addEventListener('click', function () {
     scrollBtn.style.display = 'none';
     isButtonHidden = true;
 });
+
+window.addEventListener('load', function() {
+    const aboutSection = document.querySelector('.about h2');
+    if (aboutSection) {
+        aboutSection.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    }
+});
