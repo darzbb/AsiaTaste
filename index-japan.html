@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style-japan.css">
+    <link rel="icon" href="image/flags/japan.png" type="image/png">
     <title>AsiaTaste | Японія</title>
 </head>
 <body>
@@ -15,6 +16,7 @@
             <nav>
                 <div id="main-btn">Головна сторінка</div>
                 <div id="recipe-btn">Рецепти</div>
+                <div id="fav-btn">Улюблені рецепти</div>
             </nav>
         </div>
             <div class="about">
@@ -28,112 +30,179 @@
                     <option value="index-recipe.html">       </option>
                     <option value="index-vietnam.html">В'єтнам</option>
                     <option value="index-india.html">Індія</option>
+                    <option value="index-indonesia.html">Індонезія</option>
                     <option value="index-china.html">Китай</option>
                     <option value="index-sk.html">Південна Корея</option>
                     <option value="index-thailand.html">Таїланд</option>
                     <option value="index-japan.html" selected>Японія</option>
                 </select>
             </div>
+
+            <div id="scroll-to-top" class="scroll-btn">
+                <button id="hide-button">X</button>
+                <span>↑ Вгору</span>
+            </div>
+
             <div class="recipes-cards">
-                <div class="recipe">
+                <div id="japanesecurry" class="recipe">
                     <img src="image/dishes/japan/japanesecurry.png">
-                    <div class="caption"><span class="title">Японське каррі</span></br>Густий карі з овочами та м'ясом (часто з яловичиною або куркою), зазвичай подається з рисом і має ніжно-пряний смак.</div>
-                    <div class="see-more-btn"><a href="https://zenmarket.jp/ua/blog/post/11947/%D1%8F%D0%BF%D0%BE%D0%BD%D1%81%D1%8C%D0%BA%D0%B5-%D0%BA%D0%B0%D1%80%D1%96">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Японський карі</span></br>Густий та ароматний карі, приготований з м'яса (зазвичай курки, яловичини або свинини), картоплі, моркви та цибулі, в основі якого лежить особливий карі-порошок або соус. Страва має м'який смак з помірною гостротою та подається з рисом.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://zenmarket.jp/ua/blog/post/11947/%D1%8F%D0%BF%D0%BE%D0%BD%D1%81%D1%8C%D0%BA%D0%B5-%D0%BA%D0%B0%D1%80%D1%96">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="chahan" class="recipe">
                     <img src="image/dishes/japan/chahan.png">
-                    <div class="caption"><span class="title">Чахан</span></br>Японська смажена рисова страва з овочами, яйцем і м’ясом (зазвичай свининою або креветками), приправлена соєвим соусом.</div>
-                    <div class="see-more-btn"><a href="https://rice.ua/retsepti/drugi-stravi/yaponskyj-chahan">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Чахан</span></br>Японська смажена рисова страва, що зазвичай готується з вареного рису, смаженого разом з овочами, яйцем, м'ясом або морепродуктами. Страва приправляється соєвим соусом та іншими спеціями, що надають їй легкий і ароматний смак.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://rice.ua/retsepti/drugi-stravi/yaponskyj-chahan">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="gyudon" class="recipe">
                     <img src="image/dishes/japan/gyudon.png">
-                    <div class="caption"><span class="title">Ґюдон</span></br>Миска з рисом, зверху якої викладають тушковану яловичину з цибулею в соєвому соусі, злегка солодкувату на смак.</div>
-                    <div class="see-more-btn"><a href="https://docs.google.com/document/d/1QN0kT9diCyQajmZImqJwd0JaPEuwyrjJpTO40qeWTKA/edit?usp=sharing">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Ґюдон</span></br>Популярна японська страва, що складається з тонко нарізаних шматочків яловичини, тушкованих у соєвому соусі, мирині, цукрі та цибулі, поданих на гарячому рисі. Часто страву доповнюють яйцем, зеленню та червоним перцем для більшого аромату.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://docs.google.com/document/d/1QN0kT9diCyQajmZImqJwd0JaPEuwyrjJpTO40qeWTKA/edit?usp=sharing">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="katsudon" class="recipe">
                     <img src="image/dishes/japan/katsudon.png">
-                    <div class="caption"><span class="title">Кацудон</span></br>Миска з рисом, на якій розміщують смажену свинячу котлету в клярі (тонкацу) з яйцем та цибулею в соусі.</div>
-                    <div class="see-more-btn"><a href="https://recepty.znaj.ua/187911-kacudon-recept-tradiciynoji-yaponskoji-stravi-zi-svininoyu">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Кацудон</span></br>японська страва, що складається з шматочків смаженого в паніровці свинячого відбивного (тонкацу), які подаються на рисі та заливаються яйцем, приготованим у соєвому соусі з цибулею та бульйоном. Це ситне і ароматне блюдо, яке часто подається з супом місо.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://recepty.znaj.ua/187911-kacudon-recept-tradiciynoji-yaponskoji-stravi-zi-svininoyu">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="sushi" class="recipe">
                     <img src="image/dishes/japan/sushi.png">
-                    <div class="caption"><span class="title">Суші</span></br>Страва з рису для суші, приправленого оцтом, та морепродуктів або овочів, що може подаватися в різних формах (макі, нігірі, сашимі).</div>
-                    <div class="see-more-btn"><a href="https://katana.ua/retsepti-sushi-ta-roliv/">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Суші</span></br>Традиційна японська страва, що складається з рису, заправленого оцтом, цукром і сіллю, з різними начинками, такими як сире рибне філе, морепродукти, овочі або омлет. Суші можуть подаватися в різних варіаціях, зокрема у вигляді ніґірі (рисові кульки з начинкою зверху) або макі (ролів, загорнутих у водорості).</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://katana.ua/retsepti-sushi-ta-roliv/">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="onigiri" class="recipe">
                     <img src="image/dishes/japan/onigiri.png">
-                    <div class="caption"><span class="title">Оніґірі</span></br>Рисові кульки або трикутники, часто з начинкою (лосось, тунець, мариновані сливи) і загорнуті у водорості норі.</div>
-                    <div class="see-more-btn"><a href="https://klopotenko.com/zovsim-trohy-yaponiyi-reczept-rysovyh-onigiri-z-tunczem-vid-yevgena-klopotenka/"></a>Переглянути рецепт</div>
+                    <div class="caption"><span class="title">Оніґірі</span></br>Японські рисові кульки або трикутники, зазвичай начинені солоними інгредієнтами, такими як мариновані сливи умебоші, риба чи морські водорості, та обгорнуті листям норі. Це популярна закуска або легка їжа, що зручна для перекусів та пікніків.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://klopotenko.com/zovsim-trohy-yaponiyi-reczept-rysovyh-onigiri-z-tunczem-vid-yevgena-klopotenka/"></a>Переглянути рецепт</div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="omurice" class="recipe">
                     <img src="image/dishes/japan/omurice.png">
-                    <div class="caption"><span class="title">Омлет із рисом</span></br>Страва з обсмаженого рису, загорнутого в тонкий омлет, зазвичай прикрашена кетчупом, популярна як домашня їжа.</div>
-                    <div class="see-more-btn"><a href="https://shuba.life/recipes/3375-snidanok-pryamo-z-yaponiyi-omlet-zi-smazhenim-risom-omurajsu">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Омурайс</span></br>Японська страва, яка поєднує омлет і смажений рис. Рис готується з курятиною, овочами та кетчупом, а потім обгортається в м'який омлет. Зазвичай подається з кетчупом або соусом на верху. Це популярне комфортне блюдо, що часто зустрічається в японських кафе.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://shuba.life/recipes/3375-snidanok-pryamo-z-yaponiyi-omlet-zi-smazhenim-risom-omurajsu">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="tenmusu" class="recipe">
                     <img src="image/dishes/japan/tenmusu.png">
-                    <div class="caption"><span class="title">Тенмусу</span></br>Оніґірі з начинкою з темпури (смажених морепродуктів чи овочів), загорнуте у водорості.</div>
-                    <div class="see-more-btn"><a href="https://docs.google.com/document/d/16hdKI4ZFkQdjnGtlUWBeJlgLM7gplxCFkvMsELU_JA4/edit?usp=sharing">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Тенмусу</span></br>Японські рисові кульки або трикутники, начинені хрусткими шматочками темпури, зокрема креветками або овочами. Рис обгортається листям норі, а сама страва зазвичай подається з соєвим соусом або легким бульйоном.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://docs.google.com/document/d/16hdKI4ZFkQdjnGtlUWBeJlgLM7gplxCFkvMsELU_JA4/edit?usp=sharing">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="soba" class="recipe">
                     <img src="image/dishes/japan/soba.png">
-                    <div class="caption"><span class="title">Соба</span></br>Страва з прозорої крохмальної локшини, обсмаженої з овочами, м'ясом та солодко-солоним соусом.</div>
-                    <div class="see-more-btn"><a href="https://kulinar.com.ua/soba-10-retseptiv-prygotuvannya-z-pokrokovymy-foto/">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Соба</span></br>Гречана локшина, яка може подаватися як холодною, так і гарячою. Локшину зазвичай супроводжують соєвим соусом або бульйоном, а також додають різноманітні інгредієнти, такі як темпура, зелена цибуля, васабі чи яйце.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://kulinar.com.ua/soba-10-retseptiv-prygotuvannya-z-pokrokovymy-foto/">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="udon" class="recipe">
                     <img src="image/dishes/japan/udon.png">
-                    <div class="caption"><span class="title">Удон</span></br>Товста пшенична локшина, яка подається в гарячому супі або з соусом, часто з додаванням овочів і м'яса.</div>
-                    <div class="see-more-btn"><a href="https://cookpad.com/ua/search/%D0%BB%D0%BE%D0%BA%D1%88%D0%B8%D0%BD%D0%B0%20%D1%83%D0%B4%D0%BE%D0%BD">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Удон</span></br>Товста пшенична локшина, яка зазвичай подається в гарячому бульйоні на основі соєвого соусу, даші та мирину. Удон часто доповнюється різними інгредієнтами, такими як темпура, зелена цибуля, яйце, м'ясо або морепродукти.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://cookpad.com/ua/search/%D0%BB%D0%BE%D0%BA%D1%88%D0%B8%D0%BD%D0%B0%20%D1%83%D0%B4%D0%BE%D0%BD">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="somen" class="recipe">
                     <img src="image/dishes/japan/somen.png">
-                    <div class="caption"><span class="title">Сомен</span></br>Тонка пшенична локшина, зазвичай подається холодною з соєвим соусом і бульйоном влітку.</div>
-                    <div class="see-more-btn"><a href="https://docs.google.com/document/d/1uFOKsqd37212d4LfxUcjwPLXFazzwY98SHeZKe5NUf4/edit?usp=sharing">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Сомен</span></br>Тонка пшенична локшина, яка зазвичай подається холодною в літній період. Локшина супроводжується соєвим соусом або бульйоном і часто доповнюється нарізаною зеленою цибулею, васабі або імбирем для додаткового аромату.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://docs.google.com/document/d/1uFOKsqd37212d4LfxUcjwPLXFazzwY98SHeZKe5NUf4/edit?usp=sharing">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="ramen" class="recipe">
                     <img src="image/dishes/japan/ramen.png">
-                    <div class="caption"><span class="title">Рамен</span></br>Страва з пшеничною локшиною у бульйоні (свинячому, курячому, соєвому або місо), з м'ясом, яйцем і овочами.</div>
-                    <div class="see-more-btn"><a href="https://shuba.life/articles/10326-sup-vid-yakogo-ne-vidirvatisya-5-receptiv-ramena">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Рамен</span></br>Популярна японська страва, що складається з локшини, поданої в ароматному бульйоні, який може бути соєвим, місо або свинячим. До рамена часто додають різноманітні інгредієнти, такі як варене яйце, скибочки свинини, водорості, зелена цибуля і бамбук, що надають страві багатий смак.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://shuba.life/articles/10326-sup-vid-yakogo-ne-vidirvatisya-5-receptiv-ramena">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="tempura" class="recipe">
                     <img src="image/dishes/japan/tempura.png">
-                    <div class="caption"><span class="title">Темпура</span></br>Страва з морепродуктів або овочів, обмочених у легкому клярі і обсмажених у фритюрі до хрусткої скоринки.</div>
-                    <div class="see-more-btn"><a href="https://milkalliance.com.ua/blog/ua/stattya/hotuiemo-tempuru-korysni-porady-ta-smachni-stravy">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Темпура</span></br>Японська страва, що складається з овочів, морепродуктів або м'яса, обваляних в легкому клярі і смажених до хрусткої скоринки. Темпуру часто подають з соусом тенцу, який містить соєвий соус, мирин та дафне, для додаткового аромату.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://milkalliance.com.ua/blog/ua/stattya/hotuiemo-tempuru-korysni-porady-ta-smachni-stravy">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="tonkatsu" class="recipe">
                     <img src="image/dishes/japan/tonkatsu.png">
-                    <div class="caption"><span class="title">Тонкацу</span></br>Смажена у фритюрі свиняча відбивна в паніровці, зазвичай подається з капустою і соусом.</div>
-                    <div class="see-more-btn"><a href="https://shuba.life/recipes/5758-tonkacu-yaponska-vidbivna-kotleta-zi-svinini">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Тонкацу</span></br>Японська страва, що складається з відбивної зі свинячої котлети, обваляної в паніровці та смаженої до хрусткої скоринки. Подається з капустою, рисом та спеціальним соусом тонкацу, який має солодко-гострий смак.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://shuba.life/recipes/5758-tonkacu-yaponska-vidbivna-kotleta-zi-svinini">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="gyoza" class="recipe">
                     <img src="image/dishes/japan/gyoza.png">
-                    <div class="caption"><span class="title">Ґьоза</span></br>Японські пельмені, зазвичай з начинкою зі свинини, овочів і часнику, які смажаться або варяться на пару.</div>
-                    <div class="see-more-btn"><a href="https://vici.eu/uk/%D0%B3%D0%BE%D1%82%D1%83%D1%94%D0%BC%D0%BE-gyoza-%D0%BD%D0%B0-%D1%81%D0%BA%D0%BE%D0%B2%D0%BE%D1%80%D0%BE%D0%B4%D1%96/">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Ґьоза</span></br>Японські пельмені, зазвичай з начинкою з меленого м'яса (переважно свинини) та овочів, загорнуті в тонке тісто. Вони можуть бути смажені, варені або на пару, і часто подаються з соєвим соусом, оцтом та чилі для додаткового смаку.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://vici.eu/uk/%D0%B3%D0%BE%D1%82%D1%83%D1%94%D0%BC%D0%BE-gyoza-%D0%BD%D0%B0-%D1%81%D0%BA%D0%BE%D0%B2%D0%BE%D1%80%D0%BE%D0%B4%D1%96/">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="takoyaki" class="recipe">
                     <img src="image/dishes/japan/takoyaki.png">
-                    <div class="caption"><span class="title">Такоякі</span></br>Смажені на спеціальній сковороді кульки з тістом, начинені шматочками восьминога, прикрашені соусом і пластівцями тунця.</div>
-                    <div class="see-more-btn"><a href="https://lenta.com.ua/12331-takoyaki.html">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Такоякі</span></br>Японська закуска у вигляді маленьких кульок з тіста, начинених шматочками восьминога, зеленню та імбиром. Кульки смажаться на спеціальній сковороді з поглибленнями та подаються з соусом такоякі, майонезом та рибними пластівцями.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://lenta.com.ua/12331-takoyaki.html">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="dango" class="recipe">
                     <img src="image/dishes/japan/dango.png">
-                    <div class="caption"><span class="title">Данґо</span></br>Японські рисові кульки на паличці, які можуть бути підсолодженими і подаються з різними соусами або глазур'ю.</div>
-                    <div class="see-more-btn"><a href="https://feastdelights.com/dango-recipe/">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Данґо</span></br>Традиційний японський десерт, що складається з кулеподібних шматочків рисового тіста, нанизаних на шпажки. Данго зазвичай подається з різними приправами, такими як солодкий соус із соєвого соусу (мірін) або з посипкою з соєвого борошна (кінако).</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://feastdelights.com/dango-recipe/">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="mochi" class="recipe">
                     <img src="image/dishes/japan/mochi.png">
-                    <div class="caption"><span class="title">Мочі</span></br>М'які клейкі рисові тістечка, зроблені з рисового борошна, можуть бути наповнені солодкою бобовою пастою або фруктами.</div>
-                    <div class="see-more-btn"><a href="https://cookpad.com/ua/search/%D0%BC%D0%BE%D1%82%D1%96">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Мочі</span></br>Японський десерт, що складається з м'якого, липкого рисового тіста, яке обгортає різні начинки, такі як червона паста з бобів або фруктові наповнювачі. Мочі має ніжну текстуру і часто подається як частина святкових страв або як десерт до чаю.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://cookpad.com/ua/search/%D0%BC%D0%BE%D1%82%D1%96">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="taiyaki" class="recipe">
                     <img src="image/dishes/japan/taiyaki.png">
-                    <div class="caption"><span class="title">Таякі</span></br>Японські вафлі у формі риби, зазвичай з начинкою з солодкої бобової пасти, але можуть бути й інші начинки.</div>
-                    <div class="see-more-btn"><a href="https://eatsy.recipes/product/tayyaki">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Таякі</span></br>Японський десерт у вигляді рибки, заповненої солодкою начинкою, зазвичай з червоної бобової пасти (анко), шоколаду або крему. Тісто для таякі готується на спеціальній сковороді, що надає десерту характерну форму рибки, і він часто подається гарячим.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://eatsy.recipes/product/tayyaki">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="manju" class="recipe">
                     <img src="image/dishes/japan/manju.png">
-                    <div class="caption"><span class="title">Манджю</span></br>Традиційна японська солодкість з парового тіста, наповнена солодкою пастою з червоних бобів або іншими інгредієнтами.</div>
-                    <div class="see-more-btn"><a href="https://docs.google.com/document/d/1RsvhmfnYrjYZ-gdg_zq0ivXt_x7LBhRRY-Es7stqubE/edit?usp=sharing">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Манджю</span></br>Традиційний японський десерт, що складається з м'якого пшеничного тіста, яке зазвичай заповнене солодкою червоною бобовою пастою (анко). Манджю може мати різні форми і розміри, а також бути приготованим на пару або смаженим.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://docs.google.com/document/d/1RsvhmfnYrjYZ-gdg_zq0ivXt_x7LBhRRY-Es7stqubE/edit?usp=sharing">Переглянути рецепт</a></div>
+                    </div>
                 </div>
             </div>
             </div>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style-sk.css">
+    <link rel="icon" href="image/flags/southkorea.png" type="image/png">
     <title>AsiaTaste | Південна Корея</title>
 </head>
 <body>
@@ -15,6 +16,7 @@
             <nav>
                 <div id="main-btn">Головна сторінка</div>
                 <div id="recipe-btn">Рецепти</div>
+                <div id="fav-btn">Улюблені рецепти</div>
             </nav>
         </div>
             <div class="about">
@@ -29,112 +31,179 @@
                     <option value="index-recipe.html">       </option>
                     <option value="index-vietnam.html">В'єтнам</option>
                     <option value="index-india.html">Індія</option>
+                    <option value="index-indonesia.html">Індонезія</option>
                     <option value="index-china.html">Китай</option>
                     <option value="index-sk.html" selected>Південна Корея</option>
                     <option value="index-thailand.html">Таїланд</option>
                     <option value="index-japan.html">Японія</option>
                 </select>
             </div>
+
+            <div id="scroll-to-top" class="scroll-btn">
+                <button id="hide-button">X</button>
+                <span>↑ Вгору</span>
+            </div>
+
             <div class="recipes-cards">
-                <div class="recipe">
+                <div id="tteokbokki" class="recipe">
                     <img src="image/dishes/sk/tteokbokki.png">
-                    <div class="caption"><span class="title">Токпоккі</span></br>Популярна корейська вулична страва з рисових тістечок, приготованих у гострому соусі з перцем і рибними котлетами.</div>
-                    <div class="see-more-btn"><a href="https://www.pdkorea.org.ua/korejska-kuhnya/tokpokki-vse-pro-korejsku-stravu/#:~:text=%D0%AF%D0%BA%20%D0%BF%D1%80%D0%B8%D0%B3%D0%BE%D1%82%D1%83%D0%B2%D0%B0%D1%82%D0%B8%20%D1%82%D0%BE%D0%BA%D0%BF%D0%BE%D0%BA%D0%BA%D1%96">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Токпоккі</span></br>Популярна корейська страва, що складається з м'яких рисових паличок, зварених у солодко-гострому соусі на основі чилі, соєвого соусу та цукру. Страва часто доповнюється рибними клецками, овочами або яйцями, і має приємну пряність та насичений смак.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://health.fakty.com.ua/ua/tilo/tokpokki-v-domashnih-umovah-reczept-i-shho-vhodyt-do-skladu/">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="mandu" class="recipe">
                     <img src="image/dishes/sk/mandu.png">
-                    <div class="caption"><span class="title">Манду</span></br>Корейські пельмені з різними начинками, такими як м'ясо, овочі чи тофу, які можуть бути вареними, смаженими або паровими.</div>
-                    <div class="see-more-btn"><a href="https://lenta.com.ua/11444-mandu-koreyski-pelmeni.html#health">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Манду</span></br>Корейські пельмені, наповнені різними начинками, такими як свинина, яловичина, овочі або тофу. Вони можуть бути вареними, смаженими або на пару, і зазвичай подаються з соєвим соусом або пікантним соусом для занурення.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://lenta.com.ua/11444-mandu-koreyski-pelmeni.html#health">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
-                    <img src="image/dishes/sk/buchimgae.png">
-                    <div class="caption"><span class="title">Бучімґе</span></br>Корейські млинці, зазвичай приготовані з тіста і начинок, таких як овочі, м'ясо або морепродукти, обсмажені до хрусткої скоринки.</div>
-                    <div class="see-more-btn"><a href="https://docs.google.com/document/d/1u_EIOJyYFzaZZjkZb7IMBiYtl8B9eYQ6Feewwxo9q10/edit?usp=sharing">Переглянути рецепт</a></div>
+                <div id="pajeon" class="recipe">
+                    <img src="image/dishes/sk/pajeon.jpg">
+                    <div class="caption"><span class="title">Паджон</span></br>корейські млинці, приготовані з борошна, води та зеленої цибулі, іноді з додаванням морепродуктів або м'яса. Млинці смажать до хрусткої скоринки і подають з соєвим соусом для занурення. Паджон є популярною закускою або стравою для святкових подій.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://picantecooking.com/uk/recipes/aziatska-kuhnya/koreyski-mlinci-z-zelenoyu-cibuleyu-pa-jun">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="yakbap" class="recipe">
                     <img src="image/dishes/sk/yaksik.png">
-                    <div class="caption"><span class="title">Якбап</span></br>Солодкий десерт з клейкого рису, приготований з медом, фініками, каштанами і кедровими горіхами, популярний на свята.</div>
-                    <div class="see-more-btn"><a href="https://docs.google.com/document/d/1fpIMNRU7CyFUtii1wQr_H8P-PdvSG43-nY1pOJ_Nb30/edit?usp=sharing">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Якбап</span></br>Тірадиційний корейський десерт, що складається з рису, звареного в меді та соєвому соусі, з додаванням горіхів, насіння та сухофруктів. Рис має солодку та ніжну текстуру, а поєднання меду та соєвого соусу надає йому унікальний смак.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://docs.google.com/document/d/1fpIMNRU7CyFUtii1wQr_H8P-PdvSG43-nY1pOJ_Nb30/edit?usp=sharing">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="kimchi" class="recipe">
                     <img src="image/dishes/sk/kimchi.png">
-                    <div class="caption"><span class="title">Кімчі</span></br>Традиційна корейська страва з ферментованої капусти, приправленої часником, перцем чилі та іншими спеціями.</div>
-                    <div class="see-more-btn"><a href="https://klopotenko.com/kim-chi-2/">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Кімчі</span></br>традиційне корейське ферментоване блюдо, зазвичай зроблене з капусти, редьки або іншої овочевої основи, приправленої гострим чилі, часником, імбиром, соєвим соусом та рибним соусом. Кімчі є основною стравою корейської кухні, що подається як гарнір або основний інгредієнт у багатьох стравах.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://klopotenko.com/kim-chi-2/">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="kimbap" class="recipe">
                     <img src="image/dishes/sk/kimbap.png">
-                    <div class="caption"><span class="title">Кімбап</span></br>Корейський рол, схожий на суші, з рису, овочів, м'яса або риби, загорнутий у лист норі.</div>
-                    <div class="see-more-btn"><a href="https://shuba.life/recipes/14177-yak-prigotuvati-korejskij-kimbap">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Кімбап</span></br>Традиційна корейська страва, що складається з рулетів із вареного рису, загорнутого в листи водоростей кім. Начинка може включати овочі, яйця, м'ясо, рибу або тофу, заправлені кунжутною олією та спеціями. Кімбап зазвичай нарізають на шматочки, зручні для їжі.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://shuba.life/recipes/14177-yak-prigotuvati-korejskij-kimbap">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="bibimbap" class="recipe">
                     <img src="image/dishes/sk/bibimbap.png">
-                    <div class="caption"><span class="title">Бібімбап</span></br>Популярна страва з рису, змішаного з овочами, м'ясом, яйцем і гострим соусом, яку подають у гарячій мисці.</div>
-                    <div class="see-more-btn"><a href="https://shuba.life/recipes/4657-korejskij-pibimpap-strava-yak-iz-doram">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Бібімбап</span></br>Страва, що складається з вареного рису, покритого різноманітними овочами, м'ясом або тофу, а також смаженим яйцем. Усе це подається з гострим соусом кочуджан і перемішується перед вживанням. Бібімбап є яскравим і збалансованим за смаком, що робить його улюбленою стравою як у Кореї, так і за її межами.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://shuba.life/recipes/4657-korejskij-pibimpap-strava-yak-iz-doram">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="sundae" class="recipe">
                     <img src="image/dishes/sk/sundae.png">
-                    <div class="caption"><span class="title">Сунде</span></br>Корейська ковбаса, наповнена сумішшю з крові, локшини та рису, часто подається з гострим соусом.</div>
-                    <div class="see-more-btn"><a href="https://docs.google.com/document/d/1B6xQaWjHGdFzdVijB_VI8_HwfAWHhKZmFJAP_pKpOLE/edit?usp=sharing">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Сунде</span></br>Корейська страва, що складається з варених ковбасок, зроблених із суміші свинячої крові, скляної локшини та спецій, які фарширують у свинячі кишки. Зазвичай подається в якості закуски або вуличної їжі, разом із сіллю, гострим соусом або бульйоном.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://docs.google.com/document/d/1B6xQaWjHGdFzdVijB_VI8_HwfAWHhKZmFJAP_pKpOLE/edit?usp=sharing">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="japchae" class="recipe">
                     <img src="image/dishes/sk/japchae.png">
-                    <div class="caption"><span class="title">Чапче</span></br>Страва з прозорої крохмальної локшини, обсмаженої з овочами, м'ясом та солодко-солоним соусом.</div>
-                    <div class="see-more-btn"><a href="https://shuba.life/recipes/13945-chapchhe-korejska-zakuska-do-svyata">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Чапче</span></br>Традиційна корейська страва, приготована з прозорої картопляної локшини (данмьон), обсмаженої з овочами, м'ясом та заправленої соєвим соусом і кунжутною олією. Чапче має легку текстуру, насичений смак і часто подається як гарнір або основна страва на святкових столах.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://shuba.life/recipes/13945-chapchhe-korejska-zakuska-do-svyata">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="jajangmyeon" class="recipe">
                     <img src="image/dishes/sk/jajangmyeon.png">
-                    <div class="caption"><span class="title">Чжаджанмьон</span></br>Локшина з густим соусом з чорної бобової пасти, свинини та овочів, популярна китайсько-корейська страва.</div>
-                    <div class="see-more-btn"><a href="https://yanusia.com/2022/02/chadzhanmon-chorna-koreyska-lokshyna/">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Чжаджанмьон</span></br>Популярна корейська страва з пшеничної локшини, поданої з густим соусом чжаджан на основі чорної соєвої пасти, обсмаженої зі свининою або морепродуктами, а також овочами, такими як цибуля, кабачки й картопля. Це смачна та ситна страва, яка особливо популярна як швидкий і доступний обід.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://yanusia.com/2022/02/chadzhanmon-chorna-koreyska-lokshyna/">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="kalguksu" class="recipe">
                     <img src="image/dishes/sk/kalguksu.png">
-                    <div class="caption"><span class="title">Калькуксу</span></br>Суп з ручної локшини з бульйоном, зазвичай з курячим або яловичим м'ясом і овочами.</div>
-                    <div class="see-more-btn"><a href="https://docs.google.com/document/d/1ZPaRfjy3ec2QfR5PoL9ZaCZq3ZNbru0NdiUN82wBTLQ/edit?usp=sharing">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Калькуксу</span></br>Традиційний корейський суп із ручної локшини, зварений у насиченому бульйоні на основі м'яса, морепродуктів або овочів. Страва зазвичай доповнюється картоплею, кабачками, морквою й ароматними спеціями, створюючи затишний і заспокійливий смак.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://docs.google.com/document/d/1ZPaRfjy3ec2QfR5PoL9ZaCZq3ZNbru0NdiUN82wBTLQ/edit?usp=sharing">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="ramyun" class="recipe">
                     <img src="image/dishes/sk/ramyun.png">
-                    <div class="caption"><span class="title">Рамьон</span></br>Корейська версія інстант-локшини, заправлена гострим бульйоном і різними інгредієнтами, як-от яйця, овочі чи м'ясо.</div>
-                    <div class="see-more-btn"><a href="https://armadio.net.ua/koreiskii-ramen-recepti-ta-sekreti-prigotuvannya-ili-kulinarni-nasolodi/">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Рамьон</span></br>Корейська версія інстант-локшини, зварена в насиченому бульйоні з додаванням спеціальних приправ. Рамьон часто включає овочі, яйця, м'ясо або морепродукти та подається з різними додатковими інгредієнтами. Це популярна швидка їжа в Кореї, яку люблять за її смак і простоту приготування.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://armadio.net.ua/koreiskii-ramen-recepti-ta-sekreti-prigotuvannya-ili-kulinarni-nasolodi/">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="bulgogi" class="recipe">
                     <img src="image/dishes/sk/bulgogi.png">
-                    <div class="caption"><span class="title">Пулькоґі</span></br>Тонко нарізане м'ясо (частіше яловичина), замариноване в солодкому соєвому соусі, смажене на грилі або в сковороді.</div>
-                    <div class="see-more-btn"><a href="https://shuba.life/recipes/6915-pulkogi-korejska-strava-zi-smazhenoyi-yalovichini-i-cibuli">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Пулькоґі</span></br>Традиційна корейська страва з маринованого м'яса (зазвичай яловичини), яке смажать на грилі або жарять на пательні. М'ясо маринується в соєвому соусі, часнику, цукрі, кунжутній олії та інших спеціях, що надає йому глибокий і солодкувато-гострий смак.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://shuba.life/recipes/6915-pulkogi-korejska-strava-zi-smazhenoyi-yalovichini-i-cibuli">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="samgyeopsal" class="recipe">
                     <img src="image/dishes/sk/samgyeopsal.png">
-                    <div class="caption"><span class="title">Самґьопсаль</span></br>Смажені на грилі шматочки свинячого живота, які подаються з різними соусами і овочами, популярна страва для барбекю.</div>
-                    <div class="see-more-btn"><a href="https://www.infostat.com.ua/kulinariia/korejskij-samgepsal-pokrokovij-foto-retsept-prigotuvannya-sokovitoji-svinini-z-ovochami.html">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Самґьопсаль</span></br>Популярна корейська страва, що складається з скибочок свинячого живота, які смажать на грилі прямо на столі. М'ясо загортають у листя салату разом із рисом, соусом самджан і додатковими інгредієнтами, такими як часник чи овочі. Страва має насичений смак і часто супроводжується різноманітними закусками.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://www.infostat.com.ua/kulinariia/korejskij-samgepsal-pokrokovij-foto-retsept-prigotuvannya-sokovitoji-svinini-z-ovochami.html">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="haejangguk" class="recipe">
                     <img src="image/dishes/sk/haejangguk.png">
-                    <div class="caption"><span class="title">Хеджанг-гук</span></br>Суп, відомий як «страва для похмілля», приготований з яловичини, кров'яної ковбаси, тофу та овочів.</div>
-                    <div class="see-more-btn"><a href="https://docs.google.com/document/d/1kJCMuUpiNmcuNO8Eq7LayPyIorswMWwDgROu8k9O070/edit?usp=sharing">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Хеджанг-гук</span></br>Традиційний корейський "похмільний суп", що готується на основі насиченого бульйону з яловичини, капусти, пророщеної сої, спецій та іноді кров'яної ковбаси. Суп має глибокий, пряний смак і вважається ідеальним засобом для відновлення після святкових застіль.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://docs.google.com/document/d/1kJCMuUpiNmcuNO8Eq7LayPyIorswMWwDgROu8k9O070/edit?usp=sharing">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="galbitang" class="recipe">
                     <img src="image/dishes/sk/galbitang.png">
-                    <div class="caption"><span class="title">Кальбітан</span></br>Суп на основі реберець, який вариться на повільному вогні з овочами і спеціями, подається з рисом.</div>
-                    <div class="see-more-btn"><a href="https://cookfood.com.ua/821-yak-variti-sup-kalbitkhan-koreyskiy-sup-z-khrebta-pravila-varinnya-po-krokakh-i-sekreti-smachnogo-supu.html">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Кальбітан</span></br>Корейський суп, приготований на основі яловичих ребер, що варяться з редькою, часником, цибулею та спеціями. Бульйон виходить насиченим і прозорим, а страва подається гарячою з рисом і кимчі. Кальбітан має ніжний смак і є популярним вибором у холодну пору року.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://cookfood.com.ua/821-yak-variti-sup-kalbitkhan-koreyskiy-sup-z-khrebta-pravila-varinnya-po-krokakh-i-sekreti-smachnogo-supu.html">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="bungeoppang" class="recipe">
                     <img src="image/dishes/sk/bungeoppang.png">
-                    <div class="caption"><span class="title">Пунґо-ппан</span></br>Солодкий рибоподібний пиріжок з начинкою з солодкої пасти з червоних бобів, популярний зимовий десерт.</div>
-                    <div class="see-more-btn"><a href="https://docs.google.com/document/d/1Hh_obQDNGIP28DlKUXeMuztBcw0lWl-FGmkq5dEEmng/edit?usp=sharing">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Пунґо-ппан</span></br>Традиційний корейський десерт у формі рибки, зроблений із м'якого тіста і начинений солодкою пастою з червоної квасолі. Іноді додаються інші начинки, такі як крем або шоколад. Цей десерт має хрустку зовнішню скоринку і ніжну, солодку середину, і його часто продають як популярну вуличну їжу.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://docs.google.com/document/d/1Hh_obQDNGIP28DlKUXeMuztBcw0lWl-FGmkq5dEEmng/edit?usp=sharing">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="chapssaltteok" class="recipe">
                     <img src="image/dishes/sk/chapssaltteok.png">
-                    <div class="caption"><span class="title">Чапссаль-тток</span></br>Корейські рисові тістечка з клейкого рису, часто з начинкою з солодкої бобової пасти або фруктів.</div>
-                    <div class="see-more-btn"><a href="https://docs.google.com/document/d/1Jd2I5YmmTT2EGzYHM1-jiSRG0DA2suKsF1CD6w2Ku0o/edit?usp=sharing">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Чапссаль-тток</span></br>Традиційні корейські рисові тістечка, виготовлені з клейкого рисового борошна. Вони мають м’яку, жувальну текстуру і часто наповнені солодкою пастою з червоної квасолі або іншими солодкими начинками. Цей десерт зазвичай подається на святкових заходах і має ніжний, злегка солодкий смак.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://docs.google.com/document/d/1Jd2I5YmmTT2EGzYHM1-jiSRG0DA2suKsF1CD6w2Ku0o/edit?usp=sharing">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="hotteok" class="recipe">
                     <img src="image/dishes/sk/hotteok.png">
-                    <div class="caption"><span class="title">Хотток</span></br>Солодкі корейські млинці з начинкою з коричневого цукру, кориці та подрібнених горіхів, смажені до хрусткої скоринки.</div>
-                    <div class="see-more-btn"><a href="https://nv.ua/ukr/food/eat/oladki-z-gorihami-yak-prigotuvati-koreyskiy-strit-fud-hottoki-50422072.html">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Хотток</span></br>Корейський десерт, який представляє собою смажені млинці з дріжджового тіста, начинені сумішшю коричневого цукру, кориці та подрібнених горіхів. Після смаження начинка стає карамелізованою, а млинці набувають хрусткої скоринки зовні та м'якої текстури всередині.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://nv.ua/ukr/food/eat/oladki-z-gorihami-yak-prigotuvati-koreyskiy-strit-fud-hottoki-50422072.html">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="dalgona" class="recipe">
                     <img src="image/dishes/sk/dalgona.jpg">
-                    <div class="caption"><span class="title">Дальґона</span></br>Традиційна корейська вулична цукерка з карамелізованого цукру та соди, яка створює пористу, легку текстуру.</div>
-                    <div class="see-more-btn"><a href="https://www.stb.ua/ua/2021/10/19/tsukrovi-stilniki-retsept-tsukerki-dalgona/">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Дальґона</span></br>традиційний корейський десерт, зроблений із карамелізованого цукру та щіпки харчової соди. Після затвердіння солодощам надають плоску форму, часто з витисненими візерунками. Цей десерт має хрустку текстуру та легкий карамельний смак і став популярним завдяки цьому.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://www.stb.ua/ua/2021/10/19/tsukrovi-stilniki-retsept-tsukerki-dalgona/">Переглянути рецепт</a></div>
+                    </div>
                 </div>
             </div>
             </div>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style-vietnam.css">
+    <link rel="icon" href="image/flags/vietnam.png" type="image/png">
     <title>AsiaTaste | В'єтнам</title>
 </head>
 <body>
@@ -15,11 +16,12 @@
             <nav>
                 <div id="main-btn">Головна сторінка</div>
                 <div id="recipe-btn">Рецепти</div>
+                <div id="fav-btn">Улюблені рецепти</div>
             </nav>
         </div>
             <div class="about">
                 <h2>Про кухню В'єтнаму</h2>
-                <p class="description">В’єтнамська кухня відома своїм легким, свіжим і ароматним смаком. Основні інгредієнти включають рис, свіжі трави, рибний соус та лайм. Популярні страви: фо (суп з локшиною та м’ясом), бань мі (сендвіч із хрусткою багетом), та нем (смажені або свіжі ролли). В’єтнамці часто використовують різноманітні зелень і спеції, що додає стравам свіжості.
+                <p class="description">В’єтнамська кухня відома своєю легкістю, свіжістю інгредієнтів і гармонійним поєднанням смаків: солодкого, кислого, солоного та гострого. Основу складають рис, рисова локшина, морепродукти, свинина, курятина та яловичина, доповнені ароматними травами, такими як кінза, м'ята, базилік і лемонграс. Популярні страви включають фо (рисовий суп із яловичиною або куркою), нем (смажені рулети), банх ми (в’єтнамський багет) та бунча (локшина з грильованою свининою). Кухня акцентує на свіжості, мінімальній обробці продуктів і використанні соусів, як-от нуок мам (рибний соус).
                 </p>
             </div>
             <div class="recipes">
@@ -29,112 +31,179 @@
                     <option value="index-recipe.html">       </option>
                     <option value="index-vietnam.html" selected>В'єтнам</option>
                     <option value="index-india.html">Індія</option>
+                    <option value="index-indonesia.html">Індонезія</option>
                     <option value="index-china.html">Китай</option>
                     <option value="index-sk.html">Південна Корея</option>
                     <option value="index-thailand.html">Таїланд</option>
                     <option value="index-japan.html">Японія</option>
                 </select>
             </div>
+            
+            <div id="scroll-to-top" class="scroll-btn">
+                <button id="hide-button">X</button>
+                <span>↑ Вгору</span>
+            </div>
+            
             <div class="recipes-cards">
-                <div class="recipe">
+                <div id="pho" class="recipe">
                     <img src="image/dishes/vietnam/pho.jpg">
-                    <div class="caption"><span class="title">Фо</span></br>Традиційний в'єтнамський суп на яловичому або курячому бульйоні з рисовою локшиною, ароматними травами, спеціями та м’ясом.</div>
-                    <div class="see-more-btn"><a href="https://sushipapa.com.ua/blogs/blog/klassicheskiy-retsept-kak-prigotovit-fo-bo-doma?lang=ua">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Фо</span></br>Традиційний в'єтнамський суп на основі ароматного бульйону, який подається з рисовою локшиною, ніжними шматочками яловичини або курятини, а також свіжими травами, зеленню та зазвичай лимоном та чилі. Суп має багатий, глибокий смак і часто доповнюється соусом для пікантності.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://klopotenko.com/fo-bo/">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="phoxao" class="recipe">
                     <img src="image/dishes/vietnam/phoxao.jpg">
-                    <div class="caption"><span class="title">Фо сао</span></br>Обсмажена рисова локшина з овочами, м’ясом або морепродуктами, подана з ароматними травами та соусом.</div>
-                    <div class="see-more-btn"><a href="https://docs.google.com/document/d/14QedvQI3D2Bh4d_THGOvQnNGz9L3YH-v4avAHQXJ_ow/edit?usp=sharing">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Фо сао</span></br>Варіація класичного в'єтнамського супу фо, що складається з рисової локшини, приготованої в ароматному бульйоні з яловичини або курятини. Локшина в цій страві має більш тонку текстуру, а суп подається з м'ясом, свіжими травами, зеленню та додається соус для додаткового смаку.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://docs.google.com/document/d/14QedvQI3D2Bh4d_THGOvQnNGz9L3YH-v4avAHQXJ_ow/edit?usp=sharing">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="caolau" class="recipe">
                     <img src="image/dishes/vietnam/caolau.jpg">
-                    <div class="caption"><span class="title">Цао лау</span></br>Традиційна страва міста Хойан, що складається з густої локшини, свинини, трав і ароматного бульйону, що робить її особливою.</div>
-                    <div class="see-more-btn"><a href="https://docs.google.com/document/d/1vn1-RU8chGsfGX0a6PwVv8EYJirvt87CXxucCLhSczw/edit?usp=sharing">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Цао лау</span></br>Традиційна в'єтнамська страва з Хойану, що складається з широкої рисової локшини, свіжих овочів, смаженого м'яса (зазвичай свинини) та хрустких рисових коржів. Все це заливають ароматним бульйоном з прянощами, надаючи страві глибокий смак і текстуру.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://docs.google.com/document/d/1vn1-RU8chGsfGX0a6PwVv8EYJirvt87CXxucCLhSczw/edit?usp=sharing">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="bunbohue" class="recipe">
                     <img src="image/dishes/vietnam/bunbohue.jpg">
-                    <div class="caption"><span class="title">Бун бо Хюе</span></br>Пікантний суп з яловичини з рисовою локшиною, характерний для центрального В’єтнаму, що містить ароматні спеції та трави.</div>
-                    <div class="see-more-btn"><a href="https://docs.google.com/document/d/1z-zOMGhgxlYLtXpf8fIFVYV-fUzedRzo-l1VzRBmHRc/edit?usp=sharing">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Бун бо Хюе</span></br>Пікантний суп з рисовою локшиною, приготований на основі насиченого бульйону з яловичини та свинини, з додаванням аромату лимонного трав'яного кореня та чилі. Страва подається з м'ясом, свіжими овочами, ароматними травами та рисовими коржами, що додають хрусткості.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://docs.google.com/document/d/1z-zOMGhgxlYLtXpf8fIFVYV-fUzedRzo-l1VzRBmHRc/edit?usp=sharing">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="banhmi" class="recipe">
                     <img src="image/dishes/vietnam/banhmi.jpg">
-                    <div class="caption"><span class="title">Бань мі</span></br>В'єтнамський сендвіч у хрусткій багеті з начинкою з м'яса, маринованих овочів, свіжої зелені та пряного соусу.</div>
-                    <div class="see-more-btn"><a href="https://shuba.life/recipes/7404-sendvich-ban-mi-smachnij-tandem-franciyi-ta-vyetnamu">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Бань мі</span></br>В'єтнамський сендвіч, який поєднує хрусткий багет із різноманітними начинками, такими як смажене м'ясо (свиняче, куряче або яловиче), паштет, свіжі овочі, коріандр і мариновані огірки. Все це доповнюється гострим соусом для балансу смаків.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://shuba.life/recipes/7404-sendvich-ban-mi-smachnij-tandem-franciyi-ta-vyetnamu">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="banhxeo" class="recipe">
                     <img src="image/dishes/vietnam/banhxeo.jpg">
-                    <div class="caption"><span class="title">Бань сео</span></br>Хрусткий в'єтнамські млинеці з рисового борошна, начинені свининою, креветками та бобовими паростками, подається зі свіжими овочами.</div>
-                    <div class="see-more-btn"><a href="https://eatsy.recipes/product/ban-seo">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Бань сео</span></br>В'Смажені млинці, приготовані з рисового борошна, кокосового молока та куркуми, що надає їм яскравий жовтий колір. Їх наповнюють свининою, креветками, пророщеними бобами та овочами, після чого загортаються і подаються з свіжими травами та соусом.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://eatsy.recipes/product/ban-seo">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="banhkhot" class="recipe">
                     <img src="image/dishes/vietnam/banhkhot.jpg">
-                    <div class="caption"><span class="title">Бань кот</span></br>Маленькі рисові млинці, хрусткі зовні, з ніжною начинкою з креветок і бобових паростків, подаються зі свіжими овочами.</div>
-                    <div class="see-more-btn"><a href="https://docs.google.com/document/d/1nQeidrEgwde6aRX74W94zXByrP8fczfL-M0CN0hdyeo/edit?usp=sharing">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Бань кот</span></br>Страва, що складаєтсья з маленьких парових млинців з рисового борошна, начинених свининою, креветками та спеціями. Млинці мають ніжну текстуру і зазвичай подаються з ароматним соусом і свіжими травами.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://docs.google.com/document/d/1nQeidrEgwde6aRX74W94zXByrP8fczfL-M0CN0hdyeo/edit?usp=sharing">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="banhcuon" class="recipe">
                     <img src="image/dishes/vietnam/banhcuon.jpg">
-                    <div class="caption"><span class="title">Бань куон</span></br>Тонкі рисові млинці, фаршировані свининою та грибами, які подаються з рибним соусом і свіжими травами.</div>
-                    <div class="see-more-btn"><a href="https://nutrition-me.org/ua/recipes/vietnamski-ban-kuon">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Бань куон</span></br>Традиційна в'єтнамська страва з тонких парових млинців із рисового борошна, начинених свининим фаршем, грибами та спеціями. Подається з хрусткою смаженою цибулею, свіжими травами та ніжним рибним соусом для занурення.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://nutrition-me.org/ua/recipes/vietnamski-ban-kuon">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="raumuong" class="recipe">
                     <img src="image/dishes/vietnam/raumuong.jpg">
-                    <div class="caption"><span class="title">Рау муонг</span></br>Обсмажений водяний шпинат, приправлений часником та соєвим соусом, популярний гарнір у в'єтнамській кухні.</div>
-                    <div class="see-more-btn"><a href="https://docs.google.com/document/d/1UFxdglt1D4fOmx0ZSr8Ncm-FihQGgIq_VmFWE4y6Ic8/edit?usp=sharing">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Рау муонг</span></br>Проста і популярна в'єтнамська страва з водяного шпинату, обсмаженого з часником, соєвим або рибним соусом. Страва має насичений аромат і зазвичай подається як гарнір до основних страв.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://docs.google.com/document/d/1UFxdglt1D4fOmx0ZSr8Ncm-FihQGgIq_VmFWE4y6Ic8/edit?usp=sharing">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="nomhoachuoi" class="recipe">
                     <img src="image/dishes/vietnam/nomhoachuoi.jpg">
-                    <div class="caption"><span class="title">Ном хоа чуой</span></br>Салат з бананових квітів, м'яса курки або креветок, овочів і ароматних трав, заправлений кисло-солодким соусом.</div>
-                    <div class="see-more-btn"><a href="https://docs.google.com/document/d/1tMK7nFhsiG7vrkx_yo4gfILyESmZxSaPbZAwwqUy90o/edit?usp=sharing">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Ном хоа чуой</span></br>Традиційний салат із бананових квітів, тонко нарізаних і змішаних із курятиною або креветками, морквою, зеленню, арахісом і ароматною заправкою з рибного соусу, лаймового соку та чилі. Страва має свіжий, кисло-солодкий смак.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://docs.google.com/document/d/1tMK7nFhsiG7vrkx_yo4gfILyESmZxSaPbZAwwqUy90o/edit?usp=sharing">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="bunbonambo" class="recipe">
                     <img src="image/dishes/vietnam/bunbonambo.jpg">
-                    <div class="caption"><span class="title">Бун бо нам бо</span></br>Салат з яловичини та рисової локшини з овочами, зеленню, арахісом і легким кисло-солодким соусом.</div>
-                    <div class="see-more-btn"><a href="https://gymbeam.ua/blog/uk/fitnes-recept-bun-bo-nam-bo/?srsltid=AfmBOoodC8OHQKU2ZFtcBpmIWtMO0d2KC2L4VGLHotmJ26rtuma1IUk1">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Бун бо нам бо</span></br>Страва, що складається з рисової локшини, смаженої яловичини, свіжих овочів, зелені та хрусткого арахісу. Все це заправляється ароматним соусом із рибного соусу, лайму та часнику.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://gymbeam.ua/blog/uk/fitnes-recept-bun-bo-nam-bo/?srsltid=AfmBOoodC8OHQKU2ZFtcBpmIWtMO0d2KC2L4VGLHotmJ26rtuma1IUk1">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="xoi" class="recipe">
                     <img src="image/dishes/vietnam/xoi.jpg">
-                    <div class="caption"><span class="title">Сой</span></br>В'єтнамська страва з клейкого рису, який зазвичай подається з солодкими або солоними добавками, як-от м’ясо або кокос.</div>
-                    <div class="see-more-btn"><a href="https://docs.google.com/document/d/1VzMiyR2zCw9t3qkMU7AouN9QK0NMRpqevOhGKhPNvM8/edit?usp=sharing">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Сой</span></br>Традиційна в'єтнамська страва з клейкого рису, який готується на парі та змішується з різноманітними додатками, такими як маринована свинина, курятина, сушені креветки, зелена цибуля або смажена цибля. Страва може бути як солоною, так і солодкою.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://docs.google.com/document/d/1VzMiyR2zCw9t3qkMU7AouN9QK0NMRpqevOhGKhPNvM8/edit?usp=sharing">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="chagio" class="recipe">
                     <img src="image/dishes/vietnam/chagio.jpg">
-                    <div class="caption"><span class="title">Смажені спринг-роли</span></br>Хрусткі рулети з рисового паперу, начинені м'ясом, овочами та спеціями, смажені до золотистого кольору.</div>
-                    <div class="see-more-btn"><a href="https://showdream.org/novini/kulinarya/43905-nemi-hrustk-vyetnamsk-roli-z-nachinkoyu-z-farshu.html">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Смажені спринг-роли</span></br>Популярна закуска, яка складається з тонких рисових листів, начинених сумішшю фаршу, овочів і вермішелі. Роли смажать до золотистої скоринки й подають із ароматним рибним соусом для занурення.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://showdream.org/novini/kulinarya/43905-nemi-hrustk-vyetnamsk-roli-z-nachinkoyu-z-farshu.html">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="goicuon" class="recipe">
                     <img src="image/dishes/vietnam/goicuon.jpg">
-                    <div class="caption"><span class="title">Свіжі спринг-роли</span></br>Несмажені рулети з рисового паперу, наповнені креветками, свининою, свіжими травами та рисовою локшиною, подаються зі соусом.</div>
-                    <div class="see-more-btn"><a href="https://www.metro.ua/Blogs/shcho-pryhotuvaty/Vjyetnamska-kukhnya">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Свіжі спринг-роли</span></br>страва, що складається з рисових листів, у яких загортаються свіжі овочі, злегка обсмажені креветки або курка, вермішель та зелень. Роли подаються з соусом на основі рибного соусу, часнику та чилі для додаткового аромату.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://www.metro.ua/Blogs/shcho-pryhotuvaty/Vjyetnamska-kukhnya">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="gatan" class="recipe">
                     <img src="image/dishes/vietnam/gatan.jpg">
-                    <div class="caption"><span class="title">Ґа тан</span></br>В'єтнамський курячий суп, який вариться на повільному вогні зі спеціями і травами, має цілющі властивості.</div>
-                    <div class="see-more-btn"><a href="https://docs.google.com/document/d/1qyhKtIh0p6HRmgbJjM7KM3OMTWf_fIZEfRZO0h7A1CE/edit?usp=sharing">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Курячий суп</span></br>В'єтнамська страва, що складається з вареної курки, приготованої з ароматними спеціями, такими як імбир, часник та лемонграс. Курка подається з рисом або локшиною та зазвичай доповнюється соусом або бульйоном для більш глибокого смаку.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://docs.google.com/document/d/1qyhKtIh0p6HRmgbJjM7KM3OMTWf_fIZEfRZO0h7A1CE/edit?usp=sharing">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="ganuong" class="recipe">
                     <img src="image/dishes/vietnam/ganuong.jpg">
-                    <div class="caption"><span class="title">Ґа нюонґ</span></br>Смажена курка, замаринована в спеціях, зазвичай готується на грилі і подається з рисом або овочами.</div>
-                    <div class="see-more-btn"><a href="https://docs.google.com/document/d/1tpw0fc8PspVYbho794G0ipE6sSkfKyyrjGfga_QCoEY/edit?usp=sharing">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Смажена курка</span></br>Курка, замаринована в суміші соєвого соусу, часнику, лимонного трав'яного соку та спецій, що потім смажиться до золотистої скоринки. Подається з рисом, свіжими овочами та соусом для занурення, що додає страві пікантності.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://docs.google.com/document/d/1tpw0fc8PspVYbho794G0ipE6sSkfKyyrjGfga_QCoEY/edit?usp=sharing">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="caphetrung" class="recipe">
                     <img src="image/dishes/vietnam/caphetrung.jpg">
-                    <div class="caption"><span class="title">Ка фе чунґ</span></br>В'єтнамська кава з яйцем. Збите яйце додається до міцної кави, створюючи насичену кремову текстуру.</div>
-                    <div class="see-more-btn"><a href="https://docs.google.com/document/d/1m2t-NlocCkZK5p45ebd_Nw5QVRmvQPGbBgVYMMxn7kQ/edit?usp=sharing">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Кава з яйцем</span></br>Унікальний в'єтнамський напій, що складається з міцної кави, заправленої кремом з яєчних жовтків, цукру та згущеного молока. Напій має насичений смак кави з ніжною, солодкою та кремовою текстурою, що робить його справжнім делікатесом.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://docs.google.com/document/d/1m2t-NlocCkZK5p45ebd_Nw5QVRmvQPGbBgVYMMxn7kQ/edit?usp=sharing">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="hoaquadam" class="recipe">
                     <img src="image/dishes/vietnam/hoaquadam.jpg">
-                    <div class="caption"><span class="title">Хоа куа дам</span></br>Освіжаючий десерт, що складається з екзотичних фруктів, часто з додаванням кокосового молока або льоду.</div>
-                    <div class="see-more-btn"><a href="https://docs.google.com/document/d/1U8VamCG_PmKKwySs4TXwDAInRKKg-j68041fG396auE/edit?usp=sharing">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Фруктовий салат</span></br>В'єтнамський десерт, що складається з різноманітних свіжих фруктів, таких як манго, папая, ананас, банани та авокадо, заливаються солодким сиропом із льоду, згущеного молока або йогурту. Часто подається з чутливими нотками чилі для контрасту смаків.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://docs.google.com/document/d/1U8VamCG_PmKKwySs4TXwDAInRKKg-j68041fG396auE/edit?usp=sharing">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="banhbonglan" class="recipe">
                     <img src="image/dishes/vietnam/banhbonglan.jpg">
-                    <div class="caption"><span class="title">Бісквітний торт</span></br>Ніжний та повітряний бісквіт, часто ароматизований кокосом або ваніллю, іноді подається з фруктами.</div>
-                    <div class="see-more-btn"><a href="https://docs.google.com/document/d/1n7gfJCLjD2SuLfthemOP8RbruVjWmpzV0DiXGJ1wvDk/edit?usp=sharing">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Бісквітний торт</span></br>Легкий і повітряний в'єтнамський десерт, схожий на бісквіт, який має м’яку текстуру та солодкий смак. Торт зазвичай готується з яєць, борошна, цукру та ванілі, і часто подається як самостійний десерт або з фруктами та кремом.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://docs.google.com/document/d/1n7gfJCLjD2SuLfthemOP8RbruVjWmpzV0DiXGJ1wvDk/edit?usp=sharing">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="chechuoi" class="recipe">
                     <img src="image/dishes/vietnam/chechuoi.jpg">
-                    <div class="caption"><span class="title">Банановий пудинг</span></br>Солодкий десерт із бананів, кокосового молока та тапіоки, має кремову текстуру і тропічний аромат.</div>
-                    <div class="see-more-btn"><a href="https://docs.google.com/document/d/12aBvl7BP_X1eeoGQkdYKPP0V-Qy835Czcz0UGsAHxMQ/edit?usp=sharing">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Банановий пудинг</span></br>Десерт, що складається з бананів, приготованих у кокосовому молоці з додаванням клейкого рису та цукру. Пудинг має кремову текстуру та солодкий смак, іноді з додаванням манго чи інших фруктів для більшого аромату.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://docs.google.com/document/d/12aBvl7BP_X1eeoGQkdYKPP0V-Qy835Czcz0UGsAHxMQ/edit?usp=sharing">Переглянути рецепт</a></div>
+                    </div>
                 </div>
             </div>
             </div>

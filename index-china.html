@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style-china.css">
+    <link rel="icon" href="image/flags/china.png" type="image/png">
     <title>AsiaTaste | Китай</title>
 </head>
 <body>
@@ -15,6 +16,7 @@
             <nav>
                 <div id="main-btn">Головна сторінка</div>
                 <div id="recipe-btn">Рецепти</div>
+                <div id="fav-btn">Улюблені рецепти</div>
             </nav>
         </div>
             <div class="about">
@@ -29,112 +31,179 @@
                     <option value="index-recipe.html">       </option>
                     <option value="index-vietnam.html">В'єтнам</option>
                     <option value="index-india.html">Індія</option>
+                    <option value="index-indonesia.html">Індонезія</option>
                     <option value="index-china.html" selected>Китай</option>
                     <option value="index-sk.html">Південна Корея</option>
                     <option value="index-thailand.html">Таїланд</option>
                     <option value="index-japan.html">Японія</option>
                 </select>
             </div>
+
+            <div id="scroll-to-top" class="scroll-btn">
+                <button id="hide-button">X</button>
+                <span>↑ Вгору</span>
+            </div>
+
             <div class="recipes-cards">
-                <div class="recipe">
+                <div id="pekingduck" class="recipe">
                     <img src="image/dishes/china/pekingduck.png">
-                    <div class="caption"><span class="title">Пекінська качка</span></br>Знаменита китайська страва, де качка смажиться до хрусткої скоринки, подається з млинцями, овочами і соусом.</div>
-                    <div class="see-more-btn"><a href="https://klopotenko.com/nejmovirno-hrumka-skorynka-ta-sokovyte-myaso-sekrety-prygotuvannya-kachky-po-pekinsky/">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Пекінська качка</span></br>Знаменитий китайський делікатес, що складається з хрусткої шкірки качки та м'якого м'яса, приготованої в спеціальній печі. Подається з тонкими млинцями, соусом хойсін, огірками та цибулею, що дозволяють загорнути качку в млинець і насолодитися її багатим смаком.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://klopotenko.com/nejmovirno-hrumka-skorynka-ta-sokovyte-myaso-sekrety-prygotuvannya-kachky-po-pekinsky/">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="sweetandsourpork" class="recipe">
                     <img src="image/dishes/china/sweet&sourpork.png">
-                    <div class="caption"><span class="title">Кисло-солодка свинина</span></br>Страва зі свинини в клярі, смажена з кисло-солодким соусом на основі оцту та цукру, з додаванням ананаса та овочів.</div>
-                    <div class="see-more-btn"><a href="https://www.unian.ua/recipes/second-courses/meat-dishes/svinina-v-kislo-solodkomu-sousi-recept-yak-prigotuvati-svininu-v-kislo-solodkomu-sousi-11256671.html">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Кисло-солодка свинина</span></br>Популярна китайська страва, в якій шматочки свинини обваляні в клярі, смажені до хрусткої скоринки та подані в глянцевому соусі, що поєднує кислий оцет і солодкий цукор. Страва часто містить овочі, такі як перець та ананас, і має насичений, збалансований смак.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://www.unian.ua/recipes/second-courses/meat-dishes/svinina-v-kislo-solodkomu-sousi-recept-yak-prigotuvati-svininu-v-kislo-solodkomu-sousi-11256671.html">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="kungpaochicken" class="recipe">
                     <img src="image/dishes/china/kungpaochicken.png">
-                    <div class="caption"><span class="title">Курка Кунг Пао</span></br>Гостра смажена страва з курки з арахісом, овочами та перцем чилі, заправлена соєвим соусом і часником.</div>
-                    <div class="see-more-btn"><a href="https://picantecooking.com/uk/recipes/klasika/kurka-kung-pao">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Курка Кунг Пао</span></br>Класична китайська страва, що складається з шматочків курятини, обсмажених з арахісом, перцем чілі та овочами в соусі на основі соєвого соусу, рисового оцту та кунжутного масла. Страва має пікантний, солодкуватий смак і характерний хруст від арахісу.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://picantecooking.com/uk/recipes/klasika/kurka-kung-pao">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="charsiu" class="recipe">
                     <img src="image/dishes/china/charsiu.png">
-                    <div class="caption"><span class="title">Чар сіу</span></br>Смажена свинина в маринаді з меду, соєвого соусу та спецій, що надають м’ясу характерний солодко-солоний смак і карамельну скоринку.</div>
-                    <div class="see-more-btn"><a href="https://picantecooking.com/uk/recipes/klasika/svinina-char-siu-char-siu-pork">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Чар сіу</span></br>Смажена китайська свинина, приготована за традиційним рецептом з маринадом на основі соєвого соусу, меду, китайського рисового вина та спецій. М'ясо обсмажується до золотистої скоринки, що надає йому солодкувато-солоний смак і яскравий червоний колір.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://picantecooking.com/uk/recipes/klasika/svinina-char-siu-char-siu-pork">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="jiaozi" class="recipe">
                     <img src="image/dishes/china/jiaozi.png">
-                    <div class="caption"><span class="title">Цзяоцзи</span></br>Китайські пельмені з різними начинками, такими як свинина, яловичина чи овочі, варяться або смажаться.</div>
-                    <div class="see-more-btn"><a href="https://www.djurenko.com/uk/domashnya-kuxnya/osnovni-stravi/tsziaotszi.html">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Цзяоцзи</span></br>Традиційні китайські пельмені, які можуть бути вареними, смаженими або на пару. Вони зазвичай наповнені фаршем із свинини, курки або яловичини, з додаванням овочів та спецій. Пельмені подаються з соусом на основі соєвого соусу, оцту та часнику для додаткового смаку.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://www.djurenko.com/uk/domashnya-kuxnya/osnovni-stravi/tsziaotszi.html">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="wonton" class="recipe">
                     <img src="image/dishes/china/wonton.png">
-                    <div class="caption"><span class="title">Вонтони</span></br>Тонкі пельмені, зазвичай з начинкою з м'яса чи креветок, які подають у бульйоні або обсмажують.</div>
-                    <div class="see-more-btn"><a href="https://shuba.life/recipes/1021-vontoni-smachni-malenki-kitajski-pelmeni">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Вонтон</span></br>Китайські пельмені з тонкого тіста, зазвичай начинені свининою, креветками або овочами. Вони можуть бути вареними в бульйоні або смаженими. Подаються з соусом або в супі, часто з додаванням зелені та спецій для більшого аромату.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://shuba.life/recipes/1021-vontoni-smachni-malenki-kitajski-pelmeni">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="xiaolongbao" class="recipe">
                     <img src="image/dishes/china/xiaolongbao.png">
-                    <div class="caption"><span class="title">Сяолунбао</span></br>Маленькі пельмені з начинкою з м'яса або морепродуктів, заповнені гарячим бульйоном, які подаються на пару.</div>
-                    <div class="see-more-btn"><a href="https://www.facebook.com/ifood.cooking.world/posts/%D1%88%D0%B0%D0%BD%D1%85%D0%B0%D0%B9%D1%81%D1%8C%D0%BA%D1%96-%D0%BF%D0%B5%D0%BB%D1%8C%D0%BC%D0%B5%D0%BD%D1%96-%D1%81%D1%8F%D0%BE-%D0%BB%D0%BE%D0%BD%D0%B3-%D0%B1%D0%B0%D0%BE%D1%81%D0%BA%D0%BB%D0%B0%D0%B4%D0%BD%D0%BE-%D0%B2%D0%B8%D0%B1%D1%80%D0%B0%D1%82%D0%B8-%D0%B2%D1%81%D1%8C%D0%BE%D0%B3%D0%BE-%D0%BE%D0%B4%D0%BD%D0%B5-%D0%BA%D1%80%D0%B0%D1%89%D0%B5-%D0%B1%D0%BB%D1%8E%D0%B4%D0%BE-%D0%B2-%D1%82%D0%B0%D0%BA%D1%96%D0%B9-/2052896381498541/">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Сяолунбао</span></br>Маленькі парові пельмені з тонкого тіста, начинені свіжим фаршем, зазвичай свининою, і бульйоном, що утворюється під час приготування. Пельмені мають ніжну текстуру і подаються гарячими, часто з оцтовим соусом і імбиром для додаткового смаку.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://www.facebook.com/ifood.cooking.world/posts/%D1%88%D0%B0%D0%BD%D1%85%D0%B0%D0%B9%D1%81%D1%8C%D0%BA%D1%96-%D0%BF%D0%B5%D0%BB%D1%8C%D0%BC%D0%B5%D0%BD%D1%96-%D1%81%D1%8F%D0%BE-%D0%BB%D0%BE%D0%BD%D0%B3-%D0%B1%D0%B0%D0%BE%D1%81%D0%BA%D0%BB%D0%B0%D0%B4%D0%BD%D0%BE-%D0%B2%D0%B8%D0%B1%D1%80%D0%B0%D1%82%D0%B8-%D0%B2%D1%81%D1%8C%D0%BE%D0%B3%D0%BE-%D0%BE%D0%B4%D0%BD%D0%B5-%D0%BA%D1%80%D0%B0%D1%89%D0%B5-%D0%B1%D0%BB%D1%8E%D0%B4%D0%BE-%D0%B2-%D1%82%D0%B0%D0%BA%D1%96%D0%B9-/2052896381498541/">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="shumai" class="recipe">
                     <img src="image/dishes/china/shumai.png">
-                    <div class="caption"><span class="title">Шумай</span></br>Відкриті парові пельмені, зазвичай з начинкою з м'яса, креветок і грибів, популярні в дімсам-меню.</div>
-                    <div class="see-more-btn"><a href="https://combionline.com/uk/%D1%80%D0%B5%D1%86%D0%B5%D0%BF%D1%82%D0%B8/21915/%D0%BF%D0%B5%D0%BB%D1%8C%D0%BC%D0%B5%D0%BD%D1%96-%D1%88%D1%83%D0%BC%D0%B0%D0%B8-%D0%B7-%D0%B3%D1%80%D0%B5%D0%B1%D1%96%D0%BD%D1%86%D1%8F%D0%BC%D0%B8-%D1%82%D0%B0-%D0%BA%D1%80%D0%B5%D0%B2%D0%B5%D1%82%D0%BA%D0%B0%D0%BC%D0%B8">Переглянути рецеп</a>т</div>
+                    <div class="caption"><span class="title">Шумай</span></br>Китайські пельмені на пару, зазвичай наповнені свининою, креветками або овочами. Тісто у них тонке і відкрито на верхівці, що дозволяє побачити начинку. Шумай часто подається з соєвим соусом або соусом з чилі для додаткового смаку.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://combionline.com/uk/%D1%80%D0%B5%D1%86%D0%B5%D0%BF%D1%82%D0%B8/21915/%D0%BF%D0%B5%D0%BB%D1%8C%D0%BC%D0%B5%D0%BD%D1%96-%D1%88%D1%83%D0%BC%D0%B0%D0%B8-%D0%B7-%D0%B3%D1%80%D0%B5%D0%B1%D1%96%D0%BD%D1%86%D1%8F%D0%BC%D0%B8-%D1%82%D0%B0-%D0%BA%D1%80%D0%B5%D0%B2%D0%B5%D1%82%D0%BA%D0%B0%D0%BC%D0%B8">Переглянути рецеп</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="chowmein" class="recipe">
                     <img src="image/dishes/china/chowmein.png">
-                    <div class="caption"><span class="title">Чоу мейн</span></br>Смажена локшина з овочами, м'ясом або морепродуктами, заправлена соєвим соусом і спеціями.</div>
-                    <div class="see-more-btn"><a href="https://katana.ua/recept/retsept-lokshyny-chou-meyn-z-kurkoyu/">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Чоу мейн</span></br>Популярна китайська страва, що складається з смажених рисових або пшеничних локшин, які готуються з м'ясом, морепродуктами, овочами та соєвим соусом. Страва має ароматний смак, завдяки швидкому смаженню та поєднанню різних спецій.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://katana.ua/recept/retsept-lokshyny-chou-meyn-z-kurkoyu/">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="lomein" class="recipe">
                     <img src="image/dishes/china/lomein.png">
-                    <div class="caption"><span class="title">Ло мейн</span></br>Варена локшина, яка подається з овочами та м'ясом у соєвому або устричному соусі.</div>
-                    <div class="see-more-btn"><a href="https://katana.ua/recept/retsept-lokshyny-lo-meyn-iz-kurkoyu-ta-ovochamy/">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Ло мейн</span></br>Класична китайська страва, що складається з варених локшин, перемішаних з м'ясом, морепродуктами або овочами. Локшина подається з соєвим соусом, часником, імбиром і часто з додаванням зелені, створюючи смачну та ароматну страву.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://katana.ua/recept/retsept-lokshyny-lo-meyn-iz-kurkoyu-ta-ovochamy/">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="zhajiangmian" class="recipe">
                     <img src="image/dishes/china/zhajiangmian.png">
-                    <div class="caption"><span class="title">Чжацзянмянь</span></br>Страва з товстої локшини, заправленої густим соусом з ферментованої соєвої пасти, м'яса та овочів.</div>
-                    <div class="see-more-btn"><a href="https://docs.google.com/document/d/15os9ldFEg-LjPpKNj7dVNRNysx3U6x3g3VlB8qYPqYc/edit?usp=sharing">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Чжацзянмянь</span></br>Китайська страва з пшеничних локшин, поданих з густим соусом на основі ферментованої сої, свинини та овочів. Страва має насичений, солонуватий смак і часто доповнюється свіжими огірками або іншими овочами для контрасту.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://docs.google.com/document/d/15os9ldFEg-LjPpKNj7dVNRNysx3U6x3g3VlB8qYPqYc/edit?usp=sharing">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="knifecutnoods" class="recipe">
                     <img src="image/dishes/china/knifecutnoods.png">
-                    <div class="caption"><span class="title">Дао сяо мянь</span></br>Товста локшина ручного приготування, яка нарізається ножем прямо в киплячу воду або суп.</div>
-                    <div class="see-more-btn"><a href="https://docs.google.com/document/d/1cEF_x5viiNvQlAbpPbvBJ5brqgxlP2BXIP8Xo47FMGs/edit?usp=sharing">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Дао сяо мянь</span></br>Китайська страва з локшини, нарізаної вручну ножем з великого шматка тіста. Локшина має характерну товсту і щільну текстуру, подається з різноманітними соусами, м'ясом, овочами або бульйоном, надаючи страві багатий смак і насичену консистенцію.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://docs.google.com/document/d/1cEF_x5viiNvQlAbpPbvBJ5brqgxlP2BXIP8Xo47FMGs/edit?usp=sharing">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="hotandsoursoup" class="recipe">
                     <img src="image/dishes/china/hotandsoursoup.png">
-                    <div class="caption"><span class="title">Гостро-кислий суп</span></br>Традиційний суп з тофу, грибами, яйцем і свининою, заправлений оцтом і перцем для гостро-кислого смаку.</div>
-                    <div class="see-more-btn"><a href="https://picantecooking.com/uk/recipes/klasika/kitayskiy-gostro-kisliy-sup">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Гостро-кислий суп</span></br>Популярна китайська страва, що поєднує гострий та кислий смак завдяки чилі, оцту та спеціям. Зазвичай у супі присутні гриби, тофу, яйця, овочі та інші інгредієнти, що надають страві насичену текстуру і аромат.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://picantecooking.com/uk/recipes/klasika/kitayskiy-gostro-kisliy-sup">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="crossingthebridgenoods" class="recipe">
                     <img src="image/dishes/china/crossingthebridgenoods.png">
-                    <div class="caption"><span class="title">Ґох'яо мійсянь</span></br>Знаменита страва з Юньнаню: тонка локшина подається у гарячому бульйоні з різними начинками.</div>
-                    <div class="see-more-btn"><a href="https://docs.google.com/document/d/12xWHmEHbq8khWLrAnFfm86bW_UtRZ2aQByzwU0KOCzQ/edit?usp=sharing">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Ґо цяо мі сянь</span></br>Традиційна китайська страва з локшини, яка символізує перехід через міст у культурі. Локшина зазвичай подається з бульйоном, м'ясом (часто яловичина або свинина), овочами та спеціями. Страва має ароматний, насичений смак і є популярною в китайській кухні, особливо в південних регіонах.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://docs.google.com/document/d/12xWHmEHbq8khWLrAnFfm86bW_UtRZ2aQByzwU0KOCzQ/edit?usp=sharing">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="beefnoodlesoup" class="recipe">
                     <img src="image/dishes/china/beefnoodlesoup.jpg">
-                    <div class="caption"><span class="title">Суп із локшиною та яловичиною</span></br>Ароматний бульйон з яловичиною, пшеничною локшиною, зеленню та прянощами, з насиченим і пікантним смаком.</div>
-                    <div class="see-more-btn"><a href="https://picantecooking.com/uk/recipes/aziatska-kuhnya/panaziyskiy-yalovichiy-sup-z-travami-ta-lokshinoyu">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Суп із локшиною та яловичиною</span></br>Смачний китайський бульйон, в якому поєднуються ніжні шматочки яловичини, локшина та ароматні спеції. Страва має глибокий смак завдяки соєвому соусу, імбиру та часнику, а також часто доповнюється овочами, такими як зелена цибуля чи гриби.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://picantecooking.com/uk/recipes/aziatska-kuhnya/panaziyskiy-yalovichiy-sup-z-travami-ta-lokshinoyu">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="wontonnoodles" class="recipe">
                     <img src="image/dishes/china/wontonnoodles.png">
-                    <div class="caption"><span class="title">Локшина Вонтон</span></br>Суп з тонкою локшиною і пельменями вонтон, часто з курячим бульйоном і овочами.</div>
-                    <div class="see-more-btn"><a href="https://nakukhni.com.ua/sup-z-vontonamy-ta-lokshynoyu/">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Локшина Вонтон</span></br>Популярна китайська страва, що складається з ніжної локшини, поданої в ароматному бульйоні з пельменями вонтон, наповненими свининою, креветками або овочами. Суп зазвичай доповнюється зеленню та спеціями, створюючи легкий і смачний смак.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://nakukhni.com.ua/sup-z-vontonamy-ta-lokshynoyu/">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="mooncake" class="recipe">
                     <img src="image/dishes/china/mooncake.png">
-                    <div class="caption"><span class="title">Мункейк</span></br>Традиційна китайська випічка з щільною начинкою з бобової пасти, жовтків або лотосу, популярна під час Свята середини осені.</div>
-                    <div class="see-more-btn"><a href="https://www.zeelandia.ua/recipes/pechyvo/munkeyk">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Мункейк</span></br>Традиційний китайський десерт, що має круглу форму і виготовляється з тонкого тіста, наповненого різними начинками, такими як паста з бобів, солодкий кунжут або яєчний жовток. Мункейк зазвичай подають під час святкування Китайського нового року або свята середини осені.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://www.zeelandia.ua/recipes/pechyvo/munkeyk">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="tanghulu" class="recipe">
                     <img src="image/dishes/china/tanghulu.png">
-                    <div class="caption"><span class="title">Танхулу</span></br>Китайський десерт, що складається з зацукрованих фруктів, найчастіше глоду, нанизаних на паличку.</div>
-                    <div class="see-more-btn"><a href="https://life.nv.ua/ukr/food-drink/ttangulu-karamelizovani-frukti-recept-tradiciynoji-kitayskoji-vulichnoji-jizhi-z-troh-ingrediyentiv-50386900.html">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Танхулу</span></br>Популярний китайський десерт, що складається з фруктів, найчастіше ягід, нанизаних на шпажки і покритих карамельною глазур'ю. Після охолодження цукор застигає, утворюючи хрустку скоринку, що контрастує з м'якістю фруктів всередині.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://life.nv.ua/ukr/food-drink/ttangulu-karamelizovani-frukti-recept-tradiciynoji-kitayskoji-vulichnoji-jizhi-z-troh-ingrediyentiv-50386900.html">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="eggwaffles" class="recipe">
                     <img src="image/dishes/china/eggwaffles.png">
-                    <div class="caption"><span class="title">Гонконзькі вафлі</span></br>Великі круглі вафлі з пухирцями, які подаються гарячими, іноді з різними начинками або топінгами.</div>
-                    <div class="see-more-btn"><a href="https://cook-today.com/deserty/gonkongski-vafli">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Гонконзькі вафлі</span></br>Популярний десерт з хрусткою зовнішньою скоринкою та м'якою серединою. Вафлі мають унікальну форму з маленькими круглими осередками і часто подаються з різними начинками, такими як фрукти, шоколад, солодке молоко або морозиво.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://cook-today.com/deserty/gonkongski-vafli">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="bubbletea" class="recipe">
                     <img src="image/dishes/china/bubbletea.png">
-                    <div class="caption"><span class="title">Бабл-ті</span></br>Напій на основі чаю з додаванням молока і тапіоки, відомий своїми жувальними перлинками на дні склянки.</div>
-                    <div class="see-more-btn"><a href="https://newsteka.com/bubble-tea-yak-prygotuvaty-smachnyj-babl-ti-v-domashnih-umovah/">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Бабл-ті</span></br>Популярний тайваньський десерт-напій, що складається з чорного або зеленого чаю, змішаного з молоком або фруктовим сиропом, і подається з великими тапіоковими кульками, що додають йому характерну "бульбашкову" текстуру. Напій часто прикрашається льодом і подається через велику соломинку.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://newsteka.com/bubble-tea-yak-prygotuvaty-smachnyj-babl-ti-v-domashnih-umovah/">Переглянути рецепт</a></div>
+                    </div>
                 </div>
             </div>
             </div>

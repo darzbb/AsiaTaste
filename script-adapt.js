@@ -10,6 +10,29 @@ window.addEventListener("resize", function () {
     }
 });
 
+// адаптивність для навігації
+window.addEventListener("resize", function () {
+    if (window.innerWidth < 768) {
+        // Код для маленьких екранів
+        document.querySelector("nav").style.fontSize = "12.5px";
+        document.getElementById("main-btn").style.paddingRight = "25px";
+        document.getElementById("recipe-btn").style.paddingRight = "25px";
+        document.getElementById("fav-btn").style.paddingRight = "25px";
+        document.getElementById("main-btn").style.paddingLeft = "10px";
+        document.getElementById("recipe-btn").style.paddingLeft = "10px";
+        document.getElementById("fav-btn").style.paddingLeft = "10px";
+    } else {
+        // Код для великих екранів
+        document.querySelector("nav").style.fontSize = "15px";
+        document.getElementById("main-btn").style.paddingRight = "100px";
+        document.getElementById("recipe-btn").style.paddingRight = "100px";
+        document.getElementById("fav-btn").style.paddingRight = "100px";
+        document.getElementById("main-btn").style.paddingLeft = "25px";
+        document.getElementById("recipe-btn").style.paddingLeft = "25px";
+        document.getElementById("fav-btn").style.paddingLeft = "25px";
+    }
+});
+
 window.addEventListener("resize", function () {
     if (window.innerWidth < 768) {
         // Код для маленьких екранів

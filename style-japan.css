@@ -110,8 +110,10 @@ nav {
     align-items: center;
     padding: 30px;
     padding-left: 75px;
+    font-size: 15px;
 }
-#main-btn, #recipe-btn {
+
+#main-btn, #recipe-btn, #fav-btn {
     color: white;
     user-select: none;
     text-align: center;
@@ -122,7 +124,7 @@ nav {
     transition: all 0.3s;
 }
 
-#main-btn:hover, #recipe-btn:hover {
+#main-btn:hover, #recipe-btn:hover, #fav-btn:hover {
     transform: scale(1.25);
     cursor: pointer;
     text-shadow: 0 0 10px ghostwhite;
@@ -239,7 +241,7 @@ footer p {
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
 }
-  
+
 .recipe.active {
     opacity: 1;
     transform: translateY(0);
@@ -287,10 +289,11 @@ footer p {
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 5px 2.5px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
 }
 
 .see-more-btn:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     text-shadow: 0 0 10px ghostwhite;
 }
 
@@ -298,7 +301,101 @@ footer p {
     font-size: 25px;
 }
 
+.actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 100%;
+}
+
+.favorite-icon {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 115, 115);
+    transform: rotate(-45deg);
+    margin-right: 10px;
+    top: 5px;
+    left: 1.5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.favorite-icon.active {
+    background-color: rgb(255, 70, 70);
+}
+
+.favorite-icon:before,
+.favorite-icon:after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: inherit;
+    border-radius: 50%;
+    top: -10px;
+    left: 0;
+}
+
+.favorite-icon:after {
+    top: 0;
+    left: 10px;
+}
+
 a {
     text-decoration: none;
     color: white;
+}
+
+.scroll-btn {
+    user-select: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(36, 36, 36);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    z-index: 9999;
+    pointer-events: auto;
+    width: auto;
+}
+
+.scroll-btn span {
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.scroll-btn:hover {
+    background-color: rgb(50, 50, 50);
+    transform: scale(1.1);
+}
+
+#hide-button {
+    background: rgb(255, 70, 70);
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.3s;
+    margin-left: 10px;
+}
+
+#hide-button:hover {
+    background: rgb(200, 50, 50);
+    transform: scale(1.1);
 }

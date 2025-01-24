@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style-india.css">
+    <link rel="icon" href="image/flags/india.png" type="image/png">
     <title>AsiaTaste | Індія</title>
 </head>
 <body>
@@ -15,6 +16,7 @@
             <nav>
                 <div id="main-btn">Головна сторінка</div>
                 <div id="recipe-btn">Рецепти</div>
+                <div id="fav-btn">Улюблені рецепти</div>
             </nav>
         </div>
             <div class="about">
@@ -29,112 +31,179 @@
                     <option value="index-recipe.html">       </option>
                     <option value="index-vietnam.html">В'єтнам</option>
                     <option value="index-india.html" selected>Індія</option>
+                    <option value="index-indonesia.html">Індонезія</option>
                     <option value="index-china.html">Китай</option>
                     <option value="index-sk.html">Південна Корея</option>
                     <option value="index-thailand.html">Таїланд</option>
                     <option value="index-japan.html">Японія</option>
                 </select>
             </div>
+
+            <div id="scroll-to-top" class="scroll-btn">
+                <button id="hide-button">X</button>
+                <span>↑ Вгору</span>
+            </div>
+
             <div class="recipes-cards">
-                <div class="recipe">
+                <div id="naan" class="recipe">
                     <img src="image/dishes/india/naan.png">
-                    <div class="caption"><span class="title">Наан</span></br>М'який дріжджовий хліб, зазвичай випечений у тандирі, подається гарячим як додаток до каррі та інших страв.</div>
-                    <div class="see-more-btn"><a href="https://shuba.life/recipes/3947-do-pershih-strav-indijski-korzhiki-naan">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Наан</span></br>Традиційний індійський плоский хліб із м’якого дріжджового тіста, випечений у тандирі або на сковороді. Зазвичай його подають гарячим, змащеним топленим маслом, і використовують як доповнення до каррі, соусів або інших страв.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://shuba.life/recipes/3947-do-pershih-strav-indijski-korzhiki-naan">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="chapati" class="recipe">
                     <img src="image/dishes/india/chapati.png">
-                    <div class="caption"><span class="title">Чапаті</span></br>Тонкий, прісний хліб, приготовлений на сухій сковороді з пшеничного борошна, поширений у всій Індії.</div>
-                    <div class="see-more-btn"><a href="https://eco-buffet.com/retsepty/chapati-korzhi-z-pshenychnoho-boroshna-hruboho-pomelu/">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Чапаті</span></br>Традиційний індійський плоский хліб із цільнозернового борошна, води та солі, який випікається на сухій сковороді. Він м'який і тонкий, зазвичай подається як гарнір до каррі, овочевих страв або використовується для загортання начинки.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://eco-buffet.com/retsepty/chapati-korzhi-z-pshenychnoho-boroshna-hruboho-pomelu/">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="paratha" class="recipe">
                     <img src="image/dishes/india/paratha.png">
-                    <div class="caption"><span class="title">Паратха</span></br>Багатошаровий хліб, обсмажений на маслі або гхі, часто фарширується картоплею, овочами або іншими начинками.</div>
-                    <div class="see-more-btn"><a href="https://shuba.life/recipes/7667-alu-paratha-tradicijni-indijski-korzhiki-z-kartopleyu">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Паратха</span></br>Індійський плоский хліб, приготований із шаруватого тіста на основі цільнозернового борошна, обсмаженого на сковороді з маслом або гі. Його часто начиняють картоплею, сиром панір, шпинатом або спеціями, подають із йогуртом, чатні чи каррі.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://shuba.life/recipes/7667-alu-paratha-tradicijni-indijski-korzhiki-z-kartopleyu">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="papadam" class="recipe">
                     <img src="image/dishes/india/papadam.png">
-                    <div class="caption"><span class="title">Пападам</span></br>Хрусткий тонкий корж з бобових борошен (наприклад, з урад далу), що часто подається як закуска або гарнір.</div>
-                    <div class="see-more-btn"><a href="https://docs.google.com/document/d/1VcyXNrX1LGQ008Lk4zj5tqt7Zv_5TgXs-whDO1b9CVA/edit?usp=sharing">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Пападам</span></br>Тонкий і хрусткий індійський хліб, приготований із борошна з сочевиці, нуту або рису, який зазвичай смажать у фритюрі або підсушують на вогні. Його подають як закуску або гарнір, часто із чатні, йогуртом чи соусами.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://docs.google.com/document/d/1VcyXNrX1LGQ008Lk4zj5tqt7Zv_5TgXs-whDO1b9CVA/edit?usp=sharing">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="samosas" class="recipe">
                     <img src="image/dishes/india/samosas.png">
-                    <div class="caption"><span class="title">Самоса</span></br>Трикутні смажені пиріжки з тонкого тіста, начинені картоплею, горохом, спеціями та іноді м'ясом.</div>
-                    <div class="see-more-btn"><a href="https://shuba.life/recipes/7063-samosi-znamenita-indijska-vulichna-yizha">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Самоса</span></br>Популярна індійська закуска у вигляді трикутних пиріжків із хрусткого тіста, наповнених пряною начинкою з картоплі, гороху, сочевиці або м'яса. Зазвичай подається із соусом чатні або йогуртовим дипом.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://shuba.life/recipes/7063-samosi-znamenita-indijska-vulichna-yizha">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="panipuri" class="recipe">
                     <img src="image/dishes/india/panipuri.png">
-                    <div class="caption"><span class="title">Пані-пурі</span></br>Популярна вулична страва: маленькі хрусткі кульки, наповнені пряним водяним соусом, картоплею або нутом.</div>
-                    <div class="see-more-btn"><a href="https://zakarpatpost.net/2021/07/25/%D0%BD%D0%B5%D0%B9%D0%BC%D0%BE%D0%B2%D1%96%D1%80%D0%BD%D0%BE-%D1%81%D0%BC%D0%B0%D1%87%D0%BD%D1%96-%D0%BF%D0%B0%D0%BD-%D0%BF%D1%83%D1%80%D1%96-%D1%81%D0%BA%D1%83%D1%88%D1%82%D1%83%D0%B9-%D1%96-%D0%B7/">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Паніпурі</span></br>Популярна індійська вулична страва, що складається з хрустких порожнистих кульок (пурі), наповнених пряною водою (пані), картоплею, нутом і спеціями. Ця страва має насичений кисло-гострий смак і подається як легка закуска.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://zakarpatpost.net/2021/07/25/%D0%BD%D0%B5%D0%B9%D0%BC%D0%BE%D0%B2%D1%96%D1%80%D0%BD%D0%BE-%D1%81%D0%BC%D0%B0%D1%87%D0%BD%D1%96-%D0%BF%D0%B0%D0%BD-%D0%BF%D1%83%D1%80%D1%96-%D1%81%D0%BA%D1%83%D1%88%D1%82%D1%83%D0%B9-%D1%96-%D0%B7/">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="kachori" class="recipe">
                     <img src="image/dishes/india/kachori.png">
-                    <div class="caption"><span class="title">Качорі</span></br>Смажені круглі пиріжки, зазвичай начинені пряним далом (бобовими) або картоплею, популярна закуска.</div>
-                    <div class="see-more-btn"><a href="https://smachnonews.24tv.ua/tsikavi-zakuski-yak-prigotuvati-kachori_n2169952">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Качорі</span></br>Традиційна індійська закуска у вигляді смаженого пиріжка з хрусткого тіста, наповненого пряною начинкою з сочевиці, гороху, картоплі або спецій. Зазвичай подається гарячою із соусами чатні або йогуртом.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://smachnonews.24tv.ua/tsikavi-zakuski-yak-prigotuvati-kachori_n2169952">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="kathirolls" class="recipe">
                     <img src="image/dishes/india/kathirolls.png">
-                    <div class="caption"><span class="title">Рулети Каті</span></br>Індійські рулети з коржів, які наповнюються смаженим м’ясом, овочами та спеціями, зазвичай подаються як вулична їжа.</div>
-                    <div class="see-more-btn"><a href="https://docs.google.com/document/d/1psSPwzfMBfHWb5R1UQIpGo1p9lDKcivW8ffPjwu9zWA/edit?usp=sharing">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Рулети Каті</span></br>Популярна індійська вулична страва, яка складається з м’якого плоского хліба парати, загорнутого навколо начинки. Начинка зазвичай включає пряно приготоване м’ясо, овочі, яйця або сир панір, приправлені спеціями та соусами.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://docs.google.com/document/d/1psSPwzfMBfHWb5R1UQIpGo1p9lDKcivW8ffPjwu9zWA/edit?usp=sharing">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="pakora" class="recipe">
                     <img src="image/dishes/india/pakora.png">
-                    <div class="caption"><span class="title">Пакора</span></br>Смажені овочеві шматочки в тісті з нутового борошна, популярна закуска, особливо під час дощової погоди.</div>
-                    <div class="see-more-btn"><a href="https://cookorama.net/uk/zakusky-ovochevi/pakory.html">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Пакора</span></br>Традиційна індійська закуска, яка складається з овочів, сиру панір або м'яса, обмочених у пряному нутовому тісті та обсмажених у фритюрі. Подається гарячою з соусами чатні або йогуртом.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://cookorama.net/uk/zakusky-ovochevi/pakory.html">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="saag" class="recipe">
                     <img src="image/dishes/india/saag.png">
-                    <div class="caption"><span class="title">Сага</span></br>Пряне блюдо з листової зелені, найчастіше зі шпинату або гірчиці, подається як гарнір до м'ясних або овочевих страв.</div>
-                    <div class="see-more-btn"><a href="https://docs.google.com/document/d/1sgN6iSjhN3xm4or52qKqikeIW7GU_ym6i2_k-EwrxeY/edit?usp=sharing">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Сааг</span></br>Традиційна індійська страва, що складається з тушкованих листяних овочів, таких як шпинат, гірчиця або брюква, приправлених спеціями, часником і імбиром. Подається з рисом або хлібом, таким як чапаті чи паратха.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://docs.google.com/document/d/1sgN6iSjhN3xm4or52qKqikeIW7GU_ym6i2_k-EwrxeY/edit?usp=sharing">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="momo" class="recipe">
                     <img src="image/dishes/india/momos.png">
-                    <div class="caption"><span class="title">Момо</span></br>Парові пельмені, поширені в регіоні Гімалаїв, часто фаршируються м'ясом або овочами, подаються з соусом.</div>
-                    <div class="see-more-btn"><a href="https://picantecooking.com/uk/recipes/aziatska-kuhnya/momo-tibetski-manti">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Момо</span></br>Пельмені, поширені в регіоні Гімалаїв, які можуть бути вареними або смаженими. Вони зазвичай наповнені м'ясом (як правило, яловичина, курка або свинина), овочами або сиром, приправлені спеціями. Момо часто подають з гострим соусом чатні або йогуртом.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://picantecooking.com/uk/recipes/aziatska-kuhnya/momo-tibetski-manti">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="sambar" class="recipe">
                     <img src="image/dishes/india/sambar.png">
-                    <div class="caption"><span class="title">Самбар</span></br>Пряний південноіндійський суп на основі бобових, з овочами та тамариндом, який подається з рисом або ідлі.</div>
-                    <div class="see-more-btn"><a href="https://nutrition-me.org/ua/recipes/sambar-indiia">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Самбар</span></br>Пряний південноіндійський гострий суп, приготований із чечевиці, овочів (наприклад, батату, моркви, баклажанів) і спецій, таких як гірчиця, куркума та кумін. Страва зазвичай подається з рисом або ідлі (парами з рисового борошна) як основне блюдо.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://nutrition-me.org/ua/recipes/sambar-indiia">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="tandoori" class="recipe">
                     <img src="image/dishes/india/tandoori.png">
-                    <div class="caption"><span class="title">Тандурі</span></br>Популярна індійська страва пенджабського походження, це мариновані курчата, запечені в печі тандурі.</div>
-                    <div class="see-more-btn"><a href="http://cookingzone.net/recipes/all?itemId=2715&sort=rate">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Курчата тандурі</span></br>Популярна індійська страва, у якій курка маринується в суміші йогурту, спецій та трав, таких як куркума, кумін, коріандр і гарам масала, а потім готується в спеціальній печі тандур. Результатом є ароматна, пряна та смачна курка з характерною золотистою скоринкою.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="http://cookingzone.net/recipes/all?itemId=2715&sort=rate">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="tikkamasala" class="recipe">
                     <img src="image/dishes/india/tikkamasala.png">
-                    <div class="caption"><span class="title">Курка тікка масала</span></br>Популярна індійська страва, що складається з маринованого курячого м’яса, запеченого на грилі і потім приготованого в ароматному соусі з томатів, йогурту та спецій.</div>
-                    <div class="see-more-btn"><a href="https://klopotenko.com/kurka-po-indijsky-tikka-masala-vid-yevgena-klopotenka/">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Курка тікка масала</span></br>Популярна індійська страва, що складається з маринованих шматочків курятини, запечених на грилі та приготованих у багатому, ароматному соусі з помідорів, йогурту та спецій, таких як гарам масала, кумін і коріандр. Страва подається з рисом або хлібом, як чапаті чи наан.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://klopotenko.com/kurka-po-indijsky-tikka-masala-vid-yevgena-klopotenka/">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="butterchicken" class="recipe">
                     <img src="image/dishes/india/butterchicken.png">
-                    <div class="caption"><span class="title">Мург макхані (Курча в маслі)</span></br>Ніжна курка, приготована в густому томатно-вершковому соусі з маслом та ароматними спеціями.</div>
-                    <div class="see-more-btn"><a href="https://nv.ua/ukr/food/eat/recept-batter-chiken-yak-prigotuvati-indiysku-stravu-chim-vidriznyayetsya-vid-tikka-masaloy-50398750.html">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Курча в маслі</span></br>Популярна індійська страва, що складається з ніжних шматочків курятини, маринованих у спеційній суміші йогурту, приготованих у багатому кремовому соусі з помідорів, масла, вершків і ароматних спецій. Страва має м'яку текстуру та насичений смак, часто подається з рисом або хлібом, як наан.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://nv.ua/ukr/food/eat/recept-batter-chiken-yak-prigotuvati-indiysku-stravu-chim-vidriznyayetsya-vid-tikka-masaloy-50398750.html">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="biryani" class="recipe">
                     <img src="image/dishes/india/biryani.png">
-                    <div class="caption"><span class="title">Бір'яні</span></br>Ароматний плов з довгозернистого рису басматі, змішаного зі спеціями, м'ясом або овочами, популярний по всій Індії.</div>
-                    <div class="see-more-btn"><a href="https://shuba.life/recipes/7391-biryani-z-kurkoyu-gostrij-indijskij-plov">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Бір'яні</span></br>Смажений рис з ароматними спеціями, таким як кумін, кардамон, коріандр та лавровий лист, приготований з м'ясом або овочами. Страва готується шарами з рису та начинки, часто з додаванням йогурту та смаженого цибулі. Бір'яні зазвичай подається з йогуртовим соусом або салатом.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://shuba.life/recipes/7391-biryani-z-kurkoyu-gostrij-indijskij-plov">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
-                    <img src="image/dishes/india/kulfi.png">
-                    <div class="caption"><span class="title">Кульфі</span></br>Традиційне індійське морозиво, зроблене з загущеного молока, часто ароматизоване кардамоном, фісташками або манго.</div>
-                    <div class="see-more-btn"><a href="https://nutrition-me.org/ua/recipes/kulfi-ua">Переглянути рецепт</a></div>
-                </div>
-                <div class="recipe">
-                    <img src="image/dishes/india/barfi.png">
-                    <div class="caption"><span class="title">Бурфі</span></br>Індійський солодкий десерт з молока та цукру, часто з додаванням горіхів, кокосу або ароматизаторів, таких як кардамон.</div>
-                    <div class="see-more-btn"><a href="https://novyny.live/yizha/retsept-desertu-burfi-za-30-khvilin-do-snidanku-na-8-bereznia-156472.html">Переглянути рецепт</a></div>
-                </div>
-                <div class="recipe">
-                    <img src="image/dishes/india/rasmalai.png">
-                    <div class="caption"><span class="title">Рас малай</span></br>Десерт, що складається з м'яких сирних кульок, замочених у густому підсолодженому молоці з ароматом кардамону.</div>
-                    <div class="see-more-btn"><a href="https://reporter.zp.ua/ras-malaj-wnq.html">Переглянути рецепт</a></div>
-                </div>
-                <div class="recipe">
+                <div id="malasachai" class="recipe">
                     <img src="image/dishes/india/malasachai.png">
-                    <div class="caption"><span class="title">Чай Масала</span></br>Пряний індійський чай з молоком, заварений зі спеціями, такими як кардамон, гвоздика, кориця і імбир.</div>
-                    <div class="see-more-btn"><a href="https://profifood.com.ua/ua/tea-masala-indi">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Чай Масала</span></br>Традиційний індійський чорний чай, приготований з суміші спецій, таких як кардамон, кориця, імбир, гвоздика та чорний перець, змішаний з молоком і цукром. Напій має насичений аромат і пряний смак, і є популярним вибором на сніданок або в перервах протягом дня.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://profifood.com.ua/ua/tea-masala-indi">Переглянути рецепт</a></div>
+                    </div>
+                </div>
+                <div id="kulfi" class="recipe">
+                    <img src="image/dishes/india/kulfi.png">
+                    <div class="caption"><span class="title">Кульфі</span></br>Індійський десерт, схожий на морозиво, але з густішою текстурою. Готується з молока, цукру та ароматизаторів, таких як кардамон, фісташки, манго або трояндова вода. Кульфі часто подається на паличці або в маленьких формах, і має кремовий, насичений смак.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://nutrition-me.org/ua/recipes/kulfi-ua">Переглянути рецепт</a></div>
+                    </div>
+                </div>
+                <div id="barfi" class="recipe">
+                    <img src="image/dishes/india/barfi.png">
+                    <div class="caption"><span class="title">Бурфі</span></br>Популярний індійський десерт, приготований з вареного молока, цукру та густих добавок, таких як горіхи, кокос або манка. Він має щільну текстуру і часто нарізається на маленькі квадратні або прямокутні шматочки. Бурфі може бути ароматизований кардамоном, шафраном або різними специями.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://novyny.live/yizha/retsept-desertu-burfi-za-30-khvilin-do-snidanku-na-8-bereznia-156472.html">Переглянути рецепт</a></div>
+                    </div>
+                </div>
+                <div id="rasmalai" class="recipe">
+                    <img src="image/dishes/india/rasmalai.png">
+                    <div class="caption"><span class="title">Рас малай</span></br>Ніжний індійський десерт, що складається з м'яких рисових кульок або сира панір, занурених у солодкий молочний сироп з ароматами кардамону та шафрану. Подається холодним, часто з додаванням фісташок або мигдалю для прикраси. Страва має кремову текстуру і освіжаючий смак.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://reporter.zp.ua/ras-malaj-wnq.html">Переглянути рецепт</a></div>
+                    </div>
                 </div>
             </div>
             </div>

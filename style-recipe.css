@@ -110,8 +110,10 @@ nav {
     align-items: center;
     padding: 30px;
     padding-left: 75px;
+    font-size: 15px;
 }
-#main-btn, #recipe-btn {
+
+#main-btn, #recipe-btn, #fav-btn {
     color: white;
     user-select: none;
     text-align: center;
@@ -122,12 +124,11 @@ nav {
     transition: all 0.3s;
 }
 
-#main-btn:hover, #recipe-btn:hover {
+#main-btn:hover, #recipe-btn:hover, #fav-btn:hover {
     transform: scale(1.25);
     cursor: pointer;
     text-shadow: 0 0 10px ghostwhite;
 }
-
 .about {
     user-select: none;
     margin-top: 50px;

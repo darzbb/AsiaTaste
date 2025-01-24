@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style-thailand.css">
+    <link rel="icon" href="image/flags/thailand.png" type="image/png">
     <title>AsiaTaste | Таїланд</title>
 </head>
 <body>
@@ -15,6 +16,7 @@
             <nav>
                 <div id="main-btn">Головна сторінка</div>
                 <div id="recipe-btn">Рецепти</div>
+                <div id="fav-btn">Улюблені рецепти</div>
             </nav>
         </div>
             <div class="about">
@@ -29,112 +31,179 @@
                     <option value="index-recipe.html">       </option>
                     <option value="index-vietnam.html">В'єтнам</option>
                     <option value="index-india.html">Індія</option>
+                    <option value="index-indonesia.html">Індонезія</option>
                     <option value="index-china.html">Китай</option>
                     <option value="index-sk.html">Південна Корея</option>
                     <option value="index-thailand.html" selected>Таїланд</option>
                     <option value="index-japan.html">Японія</option>
                 </select>
             </div>
+
+            <div id="scroll-to-top" class="scroll-btn">
+                <button id="hide-button">X</button>
+                <span>↑ Вгору</span>
+            </div>
+
             <div class="recipes-cards">
-                <div class="recipe">
+                <div id="padthai" class="recipe">
                     <img src="image/dishes/thailand/padthai.png">
-                    <div class="caption"><span class="title">Пад тай</span></br>Популярна тайська страва з рисової локшини, обсмаженої з яйцями, креветками або куркою, арахісом, паростками та спеціями.</div>
-                    <div class="see-more-btn"><a href="https://shuba.life/recipes/4572-pad-taj-z-kuryatinoyu-dlya-pozhivnoyi-vecheri-v-tajskomu-stili">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Пад тай</span></br>Популярна тайська страва з рисової локшини, смаженої з яйцем, тофу, креветками або куркою, приправленої соєвим соусом, рибним соусом, чилі та лаймом. Подається з подрібненими арахісами, свіжою кінзою та лимоном для додаткового смаку.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://shuba.life/recipes/4572-pad-taj-z-kuryatinoyu-dlya-pozhivnoyi-vecheri-v-tajskomu-stili">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="padseeew" class="recipe">
                     <img src="image/dishes/thailand/padseeew.png">
-                    <div class="caption"><span class="title">Пад сі-ю</span></br>Обсмажена широка рисова локшина з соєвим соусом, овочами та м'ясом (часто зі свининою або куркою), популярна вулична страва.</div>
-                    <div class="see-more-btn"><a href="https://cookpad.com/ua/recipes/24101259-pad-si-iu-abo-tailandska-smazhiena-lokshina-z-ialovichinoiu">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Пад сі-ю</span></br>Тайська страва з широкої рисової локшини, смаженої в темному соєвому соусі разом із яйцем, овочами, такими як капуста чи броколі, і м'ясом або морепродуктами. Вона має насичений солодко-солоний смак і зазвичай подається гарячою.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://cookpad.com/ua/recipes/24101259-pad-si-iu-abo-tailandska-smazhiena-lokshina-z-ialovichinoiu">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="khaosoi" class="recipe">
                     <img src="image/dishes/thailand/khaosoi.png">
-                    <div class="caption"><span class="title">Као сой</span></br>Пряний північний тайський суп з локшиною на кокосовому молоці, з додаванням курки або яловичини та хрусткою локшиною зверху.</div>
-                    <div class="see-more-btn"><a href="https://auchan.ua/ua/blog/post/khao-soi-populyarni-recepty/">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Као сой</span></br>Традиційна тайська страва з півночі країни, яка являє собою насичений каррі-суп із кокосовим молоком, широкою яєчною локшиною, куркою або яловичиною. Подається з хрусткою смаженою локшиною, лаймом, маринованими овочами та чилі-олійкою для балансу смаків.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://auchan.ua/ua/blog/post/khao-soi-populyarni-recepty/">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="thaiboatnoodles" class="recipe">
                     <img src="image/dishes/thailand/thatboatnoodles.png">
-                    <div class="caption"><span class="title">Гуай т'ю руа</span></br>"Локшина з човна", суп із тонкої локшини з яловичиною або свининою, спеціями та кров'ю для глибокого смаку.</div>
-                    <div class="see-more-btn"><a href="https://docs.google.com/document/d/1f23CbtYJw5Oj6_z4xvvhGbRuTUgH9qLXAWxtXyZpe8c/edit?usp=sharing">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Гуай т'ю руа</span></br>"Локшина з човна". Ароматний суп з рисовою локшиною, яловичиною або свининою, кров’ю тварин для густоти бульйону, часником і травами. Подається в маленьких порціях, що нагадують традицію подачі цієї страви на човнах.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://docs.google.com/document/d/1f23CbtYJw5Oj6_z4xvvhGbRuTUgH9qLXAWxtXyZpe8c/edit?usp=sharing">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="phanaengcurry" class="recipe">
                     <img src="image/dishes/thailand/phanaengcurry.png">
-                    <div class="caption"><span class="title">Пананг каррі</span></br>М'який червоний каррі з густим кокосовим молоком, подається з м'ясом (найчастіше куркою або яловичиною) і ароматними спеціями.</div>
-                    <div class="see-more-btn"><a href="https://www.epochtimes.com.ua/stravy-z-kurky/ulyublena-strava-tayskoyi-kuhni-panang-karri-v-domashnih-umovah-recept-163038">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Пананг карі</span></br>Густе тайське карі з ніжним м’ясом (часто курятиною або яловичиною), тушкованим у кокосовому молоці з пастою пананг, арахісом, чилі та лемонграсом. Страва має м’який солодкувато-пряний смак і подається з рисом.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://www.epochtimes.com.ua/stravy-z-kurky/ulyublena-strava-tayskoyi-kuhni-panang-karri-v-domashnih-umovah-recept-163038">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="massamancurry" class="recipe">
                     <img src="image/dishes/thailand/massamancurry.png">
-                    <div class="caption"><span class="title">Масаман каррі</span></br>Тайсько-мусульманська страва, каррі з кокосовим молоком, арахісом, картоплею та м'ясом, відоме своїм солодко-пряним смаком.</div>
-                    <div class="see-more-btn"><a href="https://asiafoods.com.ua/ua/a413250-massaman-karri.html?srsltid=AfmBOorn3UdpP8gbJXPtcPAGiLv4o48FJwF6XSLNBiLKRHdTbJr2sJTE">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Масаман карі</span></br>Ароматне тайське-мусульманське карі з м'яким, трохи солодким і пряним смаком, приготоване з яловичини, курятини або баранини, тушкованої в кокосовому молоці з картоплею, арахісом, цибулею та спеціями, такими як кориця й кардамон. Подається з рисом.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://asiafoods.com.ua/ua/a413250-massaman-karri.html?srsltid=AfmBOorn3UdpP8gbJXPtcPAGiLv4o48FJwF6XSLNBiLKRHdTbJr2sJTE">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="greencurry" class="recipe">
                     <img src="image/dishes/thailand/greencurry.png">
-                    <div class="caption"><span class="title">Зелена каррі</span></br>Гострий зелений каррі на кокосовому молоці з зеленими чилі, куркою, баклажанами та тайськими травами.</div>
-                    <div class="see-more-btn"><a href="https://picantecooking.com/uk/recipes/klasika/tayske-zelene-karri-z-kurkoyu">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Зелений карі</span></br>Тайська страва, що готується з кокосового молока, зеленого карі пасти, чилі, лемонграсу, базиліка та різноманітного м'яса (курка, яловичина або свинина). Страва має гострий, ароматний смак і зазвичай подається з рисом, додаючи свіжість завдяки травам.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://picantecooking.com/uk/recipes/klasika/tayske-zelene-karri-z-kurkoyu">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="thairedcurry" class="recipe">
                     <img src="image/dishes/thailand/thairedcurry.png">
-                    <div class="caption"><span class="title">Тайська червона каррі</span></br>Ароматний карі з кокосовим молоком, червоним чилі та травами, зазвичай з куркою або морепродуктами.</div>
-                    <div class="see-more-btn"><a href="https://easyfish.club/recipepost/tajskyj-chervonyj-kari-z-myntayem/">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Тайський червоний карі</span></br>Насичена тайська страва, приготована з м’яса, морепродуктів або тофу, тушкованих у пряному кокосовому молоці з червоною карі-пастою, лемонграсом, чилі, часником і травами. Подається з рисом і має яскравий гостро-пряний смак.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://easyfish.club/recipepost/tajskyj-chervonyj-kari-z-myntayem/">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="tomyum" class="recipe">
                     <img src="image/dishes/thailand/tomyum.png">
-                    <div class="caption"><span class="title">Том ям</span></br>Гостро-кислий суп з креветками, приправлений лимонною травою, лаймом, чилі та грибами.</div>
-                    <div class="see-more-btn"><a href="https://klopotenko.com/tom-yam/">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Том ям</span></br>Класичний тайський суп з яскраво вираженим кисло-гострим смаком, приготований на бульйоні з лимонного листя, лемонграсу, чилі та галангала. Зазвичай він включає креветки, курку або гриби, а також часто подається з рисом для балансу смаків.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://klopotenko.com/tom-yam/">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="tomkhagai" class="recipe">
                     <img src="image/dishes/thailand/tomkhagai.png">
-                    <div class="caption"><span class="title">Том кха гай</span></br>Суп на кокосовому молоці з куркою, лимонною травою та галангалом, відомий своїм м'яким пряно-кислим смаком.</div>
-                    <div class="see-more-btn"><a href="https://picantecooking.com/uk/recipes/klasika/tayskiy-kokosoviy-sup-z-kurkoyu-tom-kha-gai">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Том кха гай</span></br>Тайський суп з куркою, приготований на кокосовому молоці з лемонграсом, галангалом, лаймовими листями та чилі. Страва має ніжний, але ароматний смак, поєднуючи кисло-солодку нотку з пряними і трав'яними відтінками.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://picantecooking.com/uk/recipes/klasika/tayskiy-kokosoviy-sup-z-kurkoyu-tom-kha-gai">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="tomyumgoong" class="recipe">
                     <img src="image/dishes/thailand/tomyumgoong.jpg">
-                    <div class="caption"><span class="title">Том ям кунг</span></br>Гостро-кислий суп із креветками, приготований на бульйоні з лемонграсу, лайма та чилі, з яскравим ароматом та екзотичним смаком.</div>
-                    <div class="see-more-btn"><a href="https://bonduelle.ua/recept/tom-yam-kung-gostro-kisliy-tayskiy-sup-iz-krevetkami">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Том ям кунг</span></br>Класичний тайський суп з креветками, який поєднує кисло-гострі смаки, завдяки лемонграсу, галангалу, чилі, лайму та рибному соусу. Бульйон на основі кокосового молока додає страві насиченості, роблячи її ароматною та освіжаючою.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://bonduelle.ua/recept/tom-yam-kung-gostro-kisliy-tayskiy-sup-iz-krevetkami">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="yentafo" class="recipe">
                     <img src="image/dishes/thailand/yentafo.png">
-                    <div class="caption"><span class="title">Єн та фо</span></br>Суп з рожевим бульйоном на основі ферментованого соєвого соусу, подається з морепродуктами, локшиною та овочами.</div>
-                    <div class="see-more-btn"><a href="https://docs.google.com/document/d/13pgZ_mrZH2y071e6X7Yhq7WkmI-AqbeTx5C-NcNdJ_M/edit?usp=sharing">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Єн та фо</span></br>Тайсько-в'єтнамська страва, що складається з тонкої рисової локшини, приготованої в ароматному рожевому бульйоні з м'ясом (зазвичай яловичиною або куркою), овочами та свіжими травами. Подається з чилі, лаймом та соусом для додаткового смаку.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://docs.google.com/document/d/13pgZ_mrZH2y071e6X7Yhq7WkmI-AqbeTx5C-NcNdJ_M/edit?usp=sharing">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="larb" class="recipe">
                     <img src="image/dishes/thailand/larb.png">
-                    <div class="caption"><span class="title">Ларб</span></br>Гострий салат з м'яса (найчастіше зі свинини або курки), змішаний з лаймом, м'ятою та спеціями, подається з рисом.</div>
-                    <div class="see-more-btn"><a href="https://reporter.zp.ua/larb-l-uk.html">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Ларб</span></br>Тайський салат, приготований з м’яса (зазвичай яловичини, свинини або курки), дрібно нарізаного і приготованого на грилі чи смаженого, змішаного з рисовим борошном, м’ятними листям, цибулею, чилі та лаймом. Страва має свіжий, кисло-гострий смак і часто подається з листям салату.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://reporter.zp.ua/larb-l-uk.html">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="papayasalad" class="recipe">
                     <img src="image/dishes/thailand/papayasalad.png">
-                    <div class="caption"><span class="title">Салат із папаї</span></br>Гострий салат з тертої зеленої папаї, арахісом, помідорами, зеленими бобами і гострим соусом на основі лайму.</div>
-                    <div class="see-more-btn"><a href="https://lenta.com.ua/27319-tayskiy-salat-z-papayyi.html">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Салат із папаї</span></br>Популярна тайська страва, що складається з тертої зеленій папаї, змішаної з помідорами, зеленими бобами, морквою, чилі, часником та арахісом. Подається з кисло-солодким соусом на основі рибного соусу, лайму та цукру, створюючи освіжаючий і пікантний смак.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://lenta.com.ua/27319-tayskiy-salat-z-papayyi.html">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="phlakung" class="recipe">
                     <img src="image/dishes/thailand/phlakung.png">
-                    <div class="caption"><span class="title">Пла кунг</span></br>Пряний салат з креветок, заправлений соком лайму, рибним соусом, чилі та свіжими травами.</div>
-                    <div class="see-more-btn"><a href="https://docs.google.com/document/d/1QFnkCSku9t-hOPHqCmlzptbJAvItWNx-xPMcbUyaMsA/edit?usp=sharing">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Пла кунг</span></br>Тайська страва, що складається з маринованих креветок, змішаних з гострим чилі, часником, лимонним соком, рибним соусом і травами, такими як м'ята та кінза. Салат має освіжаючий, кисло-гострий смак і часто подається з листям салату або рисом.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://docs.google.com/document/d/1QFnkCSku9t-hOPHqCmlzptbJAvItWNx-xPMcbUyaMsA/edit?usp=sharing">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="yumwoosen" class="recipe">
                     <img src="image/dishes/thailand/yumwoosen.jpg">
-                    <div class="caption"><span class="title">Ям вун сен</span></br>Салат з прозорої локшини, приправлений лаймом, чилі та свіжими травами.</div>
-                    <div class="see-more-btn"><a href="https://docs.google.com/document/d/1cZf8z7p829MY60MW6BUa5qZvmFWI01_ETl0c_cWBsdU/edit?usp=sharing">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Ям вун сен</span></br>Тайський салат з тонкої рисової локшини (ву сен), змішаної з морепродуктами, куркою або свининою, а також овочами. Приправлений чилі, рибним соусом, лаймом і цукром, цей салат має кисло-гострий, солодкий смак та яскраву ароматику.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://docs.google.com/document/d/1cZf8z7p829MY60MW6BUa5qZvmFWI01_ETl0c_cWBsdU/edit?usp=sharing">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="khaoniewmamuang" class="recipe">
                     <img src="image/dishes/thailand/khaoniewmamuang.png">
-                    <div class="caption"><span class="title">Липкий рис з манго</span></br>Десерт з клейкого рису, поданого з солодким кокосовим молоком і шматочками свіжого манго.</div>
-                    <div class="see-more-btn"><a href="https://spoon.com.ua/recipes/tayskiy-lipkiy-ris-z-mango">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Липкий рис з манго</span></br>Популярний тайський десерт, що складається з м’якого липкого рису, приготованого в кокосовому молоці, і свіжих шматочків солодкого манго. Подається як солодка, кремова страва з легким тропічним смаком.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://spoon.com.ua/recipes/tayskiy-lipkiy-ris-z-mango">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="kanomkrok" class="recipe">
                     <img src="image/dishes/thailand/kanomkrok.jpg">
-                    <div class="caption"><span class="title">Тайські рисово-кокосові млинці</span></br>Тайські млинці з кокосового молока, зазвичай фаршировані солодкою кокосовою начинкою.</div>
-                    <div class="see-more-btn"><a href="https://docs.google.com/document/d/100SZsoc79zF6rkdwRiBafeWmDe4uMuWPAmHFPD-grLc/edit?usp=sharing">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Тайські рисово-кокосові млинці</span></br>Тайський десерт, що складається з м’яких, тонких млинців, приготованих з рисового борошна та кокосового молока. Вони часто наповнюються солодким кокосовим кремом або сирим кокосом, що створює смачний та ароматний десерт.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://docs.google.com/document/d/100SZsoc79zF6rkdwRiBafeWmDe4uMuWPAmHFPD-grLc/edit?usp=sharing">Переглянути рецепт</a></div>
+                    </div>
                 </div>
-                <div class="recipe">
+                <div id="bualoi" class="recipe">
                     <img src="image/dishes/thailand/bualoi.jpg">
-                    <div class="caption"><span class="title">Буа лой</span></br>Традиційний тайський десерт, що складається з рисових кульок, варених у кокосовому молоці.</div>
-                    <div class="see-more-btn"><a href="https://docs.google.com/document/d/1bf5ouvOz_wYp2v3DHDy9y9o7prXMvJE4pdHByWOE3ao/edit?usp=sharing">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Буа лой</span></br>Традиційний тайський десерт, що складається з м’яких клейких рисових кульок, наповнених солодким смачним кремом, які подаються в гарячому кокосовому молоці. Страва має ніжний, солодкий смак з ароматом кокосу та легку текстуру.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://docs.google.com/document/d/1bf5ouvOz_wYp2v3DHDy9y9o7prXMvJE4pdHByWOE3ao/edit?usp=sharing">Переглянути рецепт</a></div>
+                    </div>
                 </div>
                 <div class="recipe">
                     <img src="image/dishes/thailand/chayen.jpg">
-                    <div class="caption"><span class="title">Ча Йєн</span></br>Тайський холодний чай, приготований з чорного чаю, прянощів, згущеного молока та льоду.</div>
-                    <div class="see-more-btn"><a href="https://bayevskitchen.com/uk/thai-iced-tea/">Переглянути рецепт</a></div>
+                    <div class="caption"><span class="title">Ча йєн</span></br>Популярний тайський холодний чай, приготований з чорного чаю, підсолодженого цукром і змішаного з льодом та згущеним молоком. Напій має насичений солодкий смак і часто подається з льодом, що робить його освіжаючим у спекотні дні.</div>
+                    <div class="actions">
+                        <div class="favorite-icon"></div>
+                        <div class="see-more-btn"><a href="https://bayevskitchen.com/uk/thai-iced-tea/">Переглянути рецепт</a></div>
+                    </div>
                 </div>
             </div>
             </div>
