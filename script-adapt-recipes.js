@@ -93,7 +93,7 @@ window.addEventListener("resize", function () {
             element.style.fontSize = "22.5px";
         });
         document.querySelectorAll(".see-more-btn").forEach(function (element) {
-            element.style.fontSize = "13.75px";
+            element.style.fontSize = "12.25px";
         });
         document.querySelectorAll(".recipe img").forEach(function (element) {
             element.style.height = "97.25px";
